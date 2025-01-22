@@ -11,11 +11,10 @@
 </head>
 <body>
     <!-- header  start-->
-    <header>
+    <header class="header-1">
         <div class="header-main">
             <div class="head-inner">
                 <button class="menu-btn">
-                    <!-- <i class="material-symbols-outlined">menu </i> -->
                     <i class="ms-Icon ms-Icon--GlobalNavButton"></i>
                 </button>
                 <div class="search">
@@ -27,14 +26,33 @@
             </div>
         </div>
     </header>
+    <header class="header-2">
+      <div class="header2-inner">
+        <a href="#" class="header-logo"><img src="assets/logo.png" alt="logo-img"></a>
+        <div class="heading">
+            <a href="#" class="heading-con"><span>Azure</span></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Explore</a></li>
+                <li><button>Products</button></li>
+                <li><button>Solutions</button></li>
+                <li><button>Pricing</button></li>
+                <li><button>Partners</button></li>
+                <li><button>Resources</button></li>
+            </ul>
+        </nav>
+        <div class="search2-btn"><button></button></div>
+      </div>
+    </header>
     <!-- header end -->
      <!-- nav  start-->
-    <div class="nav">
+    <div class="nav-1">
         <button class="nav-btn">Azure</button>
     </div>
     <!-- nav end -->
      <!-- home main container -->
- <!-- <section class="home"> -->
+    <section class="home">
         <!-- home image section -->
      <section class="home-img">
         <img src="assets/home-img-2.avif" alt="home-img">
@@ -77,7 +95,7 @@
         </div>
       </div>
      </section>
-  <!-- </section> -->
+  </section>
    <!-- future news section -->
    <section class="future-news">
     <!-- future section nav -->
@@ -123,7 +141,7 @@
                             <span class="f-link-btn">
                                 <span></span>
                             </span>
-                            <span class="text">Read the blog</span>
+                            <span class="text" id="f-f-text">Read the blog</span>
                         </a>
                       </div>
                     </div>
@@ -264,7 +282,7 @@
                                                      <!-- list item 2 -->
                                                     <li><div class="sol-li-1-con">
                                                         <div class="sol-li-1-top">
-                                                            <button class="sol-li-1-btn">
+                                                            <button class="sol-li-1-btn" id="sol-li-1-btn1">
                                                                 <div class="sol-li-1-bottom" id="sol-li-1-b-id2">An adaptive cloud</div>
                                                             </button>
                                                         </div>
@@ -273,7 +291,7 @@
                                                      <!-- list item 3 -->
                                                     <li><div class="sol-li-1-con">
                                                         <div class="sol-li-1-top">
-                                                            <button class="sol-li-1-btn">
+                                                            <button class="sol-li-1-btn" id="sol-li-1-btn4">
                                                                 <div class="sol-li-1-bottom"  id="sol-li-1-b-id2">Migrate to innovate</div>
                                                             </button>
                                                         </div>
@@ -323,7 +341,7 @@
       <!-- product and section -->
       <section class="solution-container" id="pro-ser-container">
         <div class="solution">
-            <div class="solution-head"> 
+            <div class="solution-head" id="pro-ser-head"> 
                 <div class="sol-head-inner">
                     <div class="sol-h-main">
                         <div class="sol-h-con">
@@ -345,8 +363,8 @@
                                         <div class="sol-nav-content">
                                             <button class="sol-btn" id=pro-nav-f-btn><span>Featured </span></button>
                                             <button class="sol-btn" id="pro-nav-btn"><span>AI + machine learning</span></button>
-                                            <button class="sol-btn" id="pro-nav-btn"><span>compute</span></button>
-                                            <button class="sol-btn" id="pro-nav-btn"><span>containers</span></button>
+                                            <button class="sol-btn" id="pro-nav-btn"><span>Compute</span></button>
+                                            <button class="sol-btn" id="pro-nav-btn"><span>Containers</span></button>
                                             <button class="sol-btn" id="pro-nav-btn"><span>Hybrid + multicloud</span></button>
                                             <button class="sol-btn" id="pro-nav-btn"><span>IoT</span></button>
                                         </div>
@@ -386,10 +404,11 @@
                                         </div>
                                      </div>
                                     <!-- small card section -->
-                                     <div class="small-card">
+                                <div class="small-card-con">
+                                    <div class="small-card">
                                         <div class="small-inner">
                                             <div class="small-top">
-                                                <div class="small-img"><img src="assets/s-img-1.svg" alt="s1-img"></div>
+                                                <div class="small-img" id="small-f-img"><img src="assets/s-img-1.svg" alt="s1-img"></div>
                                                 <div class="small-text">
                                                     <div class="small-head"><span>Azure Arc</span></div>
                                                     <div class="small-para"><span>Unify on-premises, hybrid, and cross-cloud infrastructure.</span></div>
@@ -416,7 +435,7 @@
                                                 </div>
                                                 <div class="s-card-bottom">
                                                     <div class="s-card-link">
-                                                        <div class="s-link-content">
+                                                        <div class="s-link-content" id="s-link-content2">
                                                             <a href="#">
                                                                 <span>Explore the product</span>
                                                             </a>
@@ -430,7 +449,7 @@
                                         <div class="small-inner">
                                             <div class="small-top">
                                                 <div class="small-img"><img src="assets/s-img-3.svg" alt="s-img-1"></div>
-                                                <div class="small-text">
+                                                <div class="small-text" id="small-txt3">
                                                     <div class="small-head"><span>Azure AI Content Understanding</span></div>
                                                     <div class="small-para"><span>Simplify multimodal AI app development and automate complex data extraction.</span></div>
                                                 </div>
@@ -456,7 +475,7 @@
                                                 </div>
                                                 <div class="s-card-bottom">
                                                     <div class="s-card-link">
-                                                        <div class="s-link-content">
+                                                        <div class="s-link-content" id="s-link-content4">
                                                             <a href="#">
                                                                 <span>Explore the product</span>
                                                             </a>
@@ -474,7 +493,7 @@
                                                     <div class="small-head"><span>Azure Kubernetes Service (AKS)</span></div>
                                                     <div class="small-para"><span>Build and scale apps with managed Kubernetes.</span></div>
                                                 </div>
-                                                <div class="s-card-bottom" style="margin-top: 1.15rem;">
+                                                <div class="s-card-bottom">
                                                     <div class="s-card-link">
                                                         <div class="s-link-content">
                                                             <a href="#">
@@ -488,15 +507,15 @@
                                      </div>
                                      <div class="small-card">
                                         <div class="small-inner">
-                                            <div class="small-top" style="margin-top: 1px;">
+                                            <div class="small-top" id="small-top6">
                                                 <div class="small-img"> <img src="assets/s-img-6.svg" alt="s-img-1"></div>
                                                 <div class="small-text" id="small-txt">
                                                     <div class="small-head"><span>Azure AI Search</span></div>
                                                     <div class="small-para"><span>Deliver accurate, hyper-personalized responses in your generative AI applications.</span></div>
                                                 </div>
-                                                <div class="s-card-bottom" style="margin-top:1.15rem;">
+                                                <div class="s-card-bottom" >
                                                     <div class="s-card-link">
-                                                        <div class="s-link-content">
+                                                        <div class="s-link-content" id="s-link-content6">
                                                             <a href="#">
                                                                 <span>Explore the product</span>
                                                             </a>
@@ -506,6 +525,7 @@
                                             </div>
                                         </div>
                                      </div>
+                                </div>
                                 </div>
                             </div>
                           </div>  
@@ -574,7 +594,7 @@
                                 <a href="#"><span>Developers</span></a>
                             </div>
                             <div class="r-nav-content">
-                                <a href="#"><span>Data analyst</span></a>
+                                <a href="#"><span>Data analysts</span></a>
                             </div>
                             <div class="r-nav-content">
                                 <a href="#"><span>Bussiness leaders</span></a>
