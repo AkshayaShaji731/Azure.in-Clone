@@ -1,7 +1,6 @@
 * {
     margin: 0;
     padding: 0;
-    background-color: var(--light);
     font-family: "SegoeUI";
 }
 
@@ -48,53 +47,37 @@
     --bg-1: #f4fafd;
     --head-2: #0e1726;
 }
-
 /*--------------- header start ----------------*/
 
-.header-1 {
+header{
     margin-bottom: 34px;
-    margin-top: 0;
     display: block;
-    box-sizing: border-box;
-    min-width: 280px;
 }
-
-.header-main {
+.header1-main{
     border-bottom: 1px solid #e6e6e6;
     height: 53px;
-    padding: 0;
     background-color: var(--light);
     display: block;
-    overflow-x: visible;
 }
-
-.head-inner {
+.head-inner{
     position: relative;
     padding: 2px 0;
-    margin: 0;
     display: flex;
-    max-width: 1600px;
-    height: 100%;
 }
 
 /* ----------menu button----------- */
 
-.menu-btn {
+.menu-btn{
     padding: 6px 0 8px 0;
     margin: 1px;
     width: 48px;
     height: 48px;
-    float: left;
     display: block;
     background: transparent;
     cursor: pointer;
-    max-width: 374px;
-    overflow: hidden;
-    white-space: nowrap;
     border: none;
 }
-
-.menu-btn i {
+.menu-btn i{
     width: 20px;
     height: 20px;
     font-size: 20px;
@@ -106,156 +89,76 @@
 
 /*---------- search conatiner -------------*/
 
-.search {
-    margin: 0;
-    float: right;
+.search{
     display: flex;
     flex: 1 0 auto;
     position: relative;
 }
-
 /* -----------search button ---------*/
-.search-btn {
+.search-btn{
     position: absolute;
     left: 1px;
     padding: 8px 8px 8px 0;
     border: none;
-    height: 32px;
     background: transparent;
     width: 34px;
-    white-space: nowrap;
     margin: 3px 6px 1px 2px;
-    float: left;
     cursor: pointer;
 }
-
-.search-inner {
+.search-inner{
     display: block;
     margin: 6px 0;
-    float: left;
-    /* max-width: 296px; */
-    height: 38px;
 }
-
-.search-btn i {
-    display: inline-block;
-    font-size: 16px;
-    margin-left: 2px;
-    position: relative;
+.search-btn i{
+   display:inline-block;
+   font-size: 16px;
+   margin-left:2px;
+   position: relative;
 }
-
 /*------------ search end --------------*/
 /* ------------logo------------------- */
-.search a {
+.search a{
     margin: 1px;
     padding: 9px 4px 12px;
     display: block;
-    position: absolute;
+    position:absolute;
     left: calc(50% - 85px);
-    height: auto;
-    text-decoration: none;
-    cursor: pointer;
-    flex-grow: 1;
+    cursor: pointer; 
+    flex-grow: 1;   
 }
-
-.logo {
-    margin: -3px 0px 0px 0px;
+.logo{
     width: 108px;
     display: block;
-    margin: 0;
-    border: none;
     cursor: pointer;
 }
-
 /*-------------- logo end --------------*/
-/*--------------- nav start------------ */
-.nav-1 {
-    position: absolute;
-    left: 0;
-    top: 54px;
-    width: 100%;
-    height: 33px;
-    border-bottom: 1px solid #e6e6e6;
-    color: var(--dark);
-    background: var(--light);
-    float: right;
-}
-
-.nav-btn {
-    background: transparent;
-    border: 0;
-    color: var(--dark);
-    display: block;
-    font-weight: 550;
-    height: 100%;
-    font-size: 15px;
-    font-family: "SegoeUI";
-    line-height: normal;
-    margin: 0 1px;
-    padding: 0 15px;
-    text-align: left;
-    cursor: pointer;
-}
-
-.nav-btn::after {
-    font-family: "FabricMDL2Icons";
-    content: "";
-    font-size: 12px;
-    font-weight: 700;
-    position: relative;
-    top: 2px;
-    color: var(--dark);
-    text-align: left;
-    cursor: pointer;
-    padding-left: 11px;
-}
-
-/*------------ end of nav--------- */
-.header-2 {
-    margin: 0 0 2px;
-    padding-inline: 1.5rem;
+.header2-main{
+    height: 54px;
+    margin-bottom: 2px;
+    padding-inline: 24px;
     display: none;
-}
-
-.header2-inner {
-    display: flex;
     position: relative;
 }
-
-.header-logo {
+.header2-main a{
     padding: 16px 6px 16px 10px;
-    margin: 1px 0px 0px;
-    height: 100%;
-    width: 121px;
-    /* float: left; */
+    float: left;
+    margin-top: 1px;
+    text-decoration: none;
 }
-
-.header-logo img {
+.h2-logo{
+    width: 121px;
+    position: relative;
+}
+.h2-logo img{
     margin-top: -3px;
     width: 108px;
-    height: auto;
     display: block;
 }
-
-.heading {
-    float: right;
-    display: block;
+.h2-head{
     position: relative;
-    white-space: wrap;
-}
-
-.heading-con {
-    margin: 1px 0 0 18px;
-    padding: 16px 6px 16px 10px;
-    text-decoration: none;
-    /* position: relative; */
-    height: 100%;
-    width: auto;
-    white-space: nowrap;
     display: block;
 }
-
-.heading::before {
+.h2-head::before{
     border-left: 2px solid #000;
     height: 24px;
     content: " ";
@@ -264,55 +167,43 @@
     top: 15px;
     left: 0;
 }
-
-.heading-con span {
+.h2-head a{
+    margin-left: 18px;
+}
+.h2-head a span{
     display: block;
     font-size: 18px;
     font-weight: 600;
     margin-top: -3px;
     color: #262626;
 }
-
-nav {
-    padding-inline: 2px 1px;
-    height: 100%;
+nav{
     display: block;
+    padding-inline: 2px 1px;
+    flex-direction: 1 1 auto;
 }
-
-nav ul {
+.nav-con{
     display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
+    position: relative;
 }
-
-nav ul li {
-    font-size: 13px;
-    font-weight: 400;
-    font-family: "SegoeUI";
-    color: #262626;
-}
-
-nav ul li a {
-    padding: 17px 9px 10px;
-    margin: 1px 0 0;
-    text-decoration: none;
+#nav-content{
+    border: 1px solid transparent;
     color: #262626;
     display: inline-block;
-    /* height: 48px; */
+    padding: 16px 8px 10px;
+    font-size: 13px;
+    font-weight: 400;
 }
-
-nav ul li button {
-    margin: 2px -10px 0 4.5px;
-    padding: 16px 30px 16px 12px;
+.nav-con button{
+    margin: 1px -10px 0 3px;
+    padding: 16px 28.73px 16px 12px;
+    color:#262626;
+    border: 1px solid transparent;
+    display: inline-block;
+    background-color: transparent;
     position: relative;
-    border: none;
-    font-family: "SegoeUI";
-    color: #262626;
-    background: none;
 }
-
-nav ul li button::after {
+.nav-con button::after{
     font-family: "Fluent Icons";
     content: "";
     position: absolute;
@@ -321,46 +212,65 @@ nav ul li button::after {
     color: currentColor;
     font-weight: 700;
     padding-top: 6px;
-    right: 15px;
+    right: 13px;
 }
-
-.search2-btn {
+.h2-search-btn{
+    margin: 3px 6px 0;
+    padding-block: 15px 30px;
     display: flex;
-    justify-content: flex-end;
-    margin-top: 3px;
-    float: right;
-}
-
-.search2-btn button {
+    justify-content: end;
+    background: transparent;
     border: none;
-    background: none;
-    margin: 0 6px 1px;
-    padding: 15px 9px 30px;
-    height: 32px;
-    margin-right: 6px;
     position: absolute;
-    top: 0;
-    right: 0;
+    right: 35px;
+    top: 1px;
 }
-
-.search2-btn button::after {
+.h2-search-btn::after{
     font-family: "Fluent Icons";
     content: "";
-    border: none;
-    display: inline-block;
     font-size: 16px;
-    margin-left: 2px;
-    position: relative;
     vertical-align: sub;
-    line-height: 18px;
+    transform: rotate(90deg);
 }
-
+/*--------------- nav start------------ */
+.nav{
+    position: absolute;
+    left: 0;
+    top: 54px;
+    width: 100%;
+    height:33px;
+    border-bottom: 1px solid #e6e6e6;
+    color: var(--dark);
+}
+.nav-btn{
+    background: transparent;
+    border: 0;
+    color: var(--dark);
+    display: block;
+    font-weight: 550;
+    height: 100%;
+    font-size: 15px;
+    margin: 0 1px;
+    padding: 0 15px;
+    cursor: pointer;
+}
+.nav-btn::after{
+    font-family:  "FabricMDL2Icons";
+    content: "";
+    font-size: 12px;
+    font-weight: 700;
+    position: relative;
+    top: 2px;
+    color: var(--dark);
+    cursor: pointer;
+    padding-left: 11px;
+}
+/*------------ end of nav--------- */
 /*-------- fixed chat ------------*/
-.chat {
-    display: none;
+.chat{
+    display:none;
 }
-
-.chat-con {
+.chat-con{
     position: fixed;
     right: 1rem;
     bottom: 0;
@@ -369,17 +279,16 @@ nav ul li button::after {
     display: flex;
 
 }
-
-.chat-con button {
+.chat-con button{
     padding: 0.75rem;
-    padding-left: 2.185rem;
+    padding-left:2.185rem;
     cursor: pointer;
     border: 2px solid transparent;
     font-weight: 600;
     font-size: .9375rem;
     line-height: 1.375rem;
     letter-spacing: -.02em;
-    background-color: #0067b8;
+    background-color:#0067b8;
     color: var(--light);
     display: inline-block;
     position: relative;
@@ -388,8 +297,7 @@ nav ul li button::after {
     border-radius: .5rem;
     font-family: "SegoeUI";
 }
-
-.chat-con button::after {
+.chat-con button::after{
     font-family: "Fluent Icons";
     content: "";
     font-weight: 400;
@@ -402,92 +310,63 @@ nav ul li button::after {
     font-size: .9375rem;
     letter-spacing: -.02em;
 }
-
 /* ------------home container-------------- */
-.home {
-    /* min-height: 580px; */
-    /* padding: 0 0 56px 0; */
+.home{
+    display: block;
     position: relative;
 }
-
 /*------------ home image section----------  */
-.home-img {
+.home-img{
     max-height: 100%;
-    overflow: hidden;
+    width: 100%;
     display: block;
-    box-sizing: border-box;
 }
-
-.home-img img {
+.home-img img{
     width: 100%;
     height: 100%;
     object-fit: cover;
     aspect-ratio: initial;
     box-sizing: border-box;
 }
-
 /* ---------end of home image section--------- */
 /* -----------section content---------------- */
-.content {
+.content{
     padding: 0 1rem;
-    width: 100%;
     margin-inline: auto;
-    box-sizing: border-box;
     display: block;
-    background-color: var(--bg-1);
+    background-color:var(--bg-1);
     border-bottom: 1px solid #e6e6e6;
     margin-top: -2px;
 }
-
-.content-inner {
+.content-inner{
     display: flex;
-    flex-wrap: wrap;
-    margin-inline: -0.25rem;
-}
-
-.con-main {
+    margin-inline:-0.25rem;
     padding: 0.25rem;
 }
-
-.content-container {
+.content-container{
     margin-top: 1.563rem;
-    display: flex;
-    flex-direction: column;
+    display: grid;
     column-gap: 0.75rem;
-    flex-wrap: wrap;
     row-gap: 0.5rem;
-    box-sizing: border-box;
 }
-
-.con-content {
-    flex-grow: 0;
-    flex-shrink: 0;
-}
-
 /*------------- content-1--------------- */
-.content-1 {
+.content-1{
     margin: 0 0 0.625rem;
     display: block;
 }
-
-.content-heading-1 {
-    color: var(--head-1);
+.content-heading-1{
+    color:var(--head-1);
     font-weight: 600;
     font-size: 0.75rem;
     line-height: 1.18rem;
-    letter-spacing: 0.08em;
-    font-family: "SegoeUI";
+    letter-spacing:0.08em;
 }
-
 /*------------content-2---------------*/
-.content-2 {
-    margin: 0;
+.content-2{
     color: var(--head-2);
     display: block;
-    padding: 0;
 }
-
-.content-2 h1 {
+.content-2 h1{
     font-weight: 600;
     font-size: 2rem;
     line-height: 2.5rem;
@@ -495,17 +374,15 @@ nav ul li button::after {
     margin: 0;
     font-family: "SegoeUI";
 }
-
 /*----------------- content-3 ----------*/
-.content-3 {
+.content-3{
     margin: 1rem 0 0;
     color: var(--head-2);
     padding-right: 1rem;
-    box-sizing: border-box;
-    display: block;
+    /* box-sizing: border-box; */
+    display:block;
 }
-
-.content-para {
+.content-para{
     display: contents;
     box-sizing: border-box;
     color: var(--head-2);
@@ -513,119 +390,84 @@ nav ul li button::after {
     font-size: 1.125rem;
     line-height: 1.75rem;
     letter-spacing: -0.03em;
-    font-family: "SegoeUI";
 }
-
 /*---------- content 4----------- */
-.content-4 {
+.content-4{
     margin: 1.5rem 0 0;
-    box-sizing: border-box;
     display: block;
 }
-
-.content-4-inner {
+.content-4-inner{
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
-    box-sizing: border-box
+    gap:0.5rem;
 }
-
-.content-4-inner a {
+.content-4-inner a{
     padding: 0.75rem;
     font-weight: 600;
     font-size: .9375rem;
-    line-height: 1.375rem;
+    line-height:  1.375rem;
     letter-spacing: -0.02em;
     border-radius: 0.5rem;
     display: inline-block;
-    position: relative;
-    text-decoration: none;
+    text-decoration:none;
     cursor: pointer;
-    box-sizing: border-box;
-    font-family: "SegoeUI";
 }
-
-.content-4-inner a span {
+.content-4-inner a span{
     padding-bottom: 0.125rem;
     display: block;
     text-align: center;
-    box-sizing: border-box;
 }
-
-#con-4-a1 {
-    border: 2px solid transparent;
+ #con-4-a1{
+    border:2px solid transparent;
     background-color: #0078d4;
     color: var(--light);
 }
-
-#con-4-a2 {
+#con-4-a2{
     background-color: transparent;
-    border: 2px solid var(--head-1);
+    border:2px solid var(--head-1);
     color: #004275;
 }
-
-.content-space {
+.content-space{
     height: 91px;
     background: var(--bg-1);
 }
-
 /* -----------end of the contend section----------*/
 /*-------------home end----------------------*/
 /*-------------future-news------------------*/
-.future-news {
+.future-news{
     display: block;
-    box-sizing: border-box;
-
+    position: relative;
 }
-
 /*------------future nav section--------------*/
-.future-nav {
+.future-nav1{
     height: 60px;
-    margin: 0;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
-    /* border-radius: 0.5rem; */
-    box-shadow: 0 0.125rem rgba(0, 0, 0, 0.12), 0 0.125rem 0.25rem rgba(0, 0, 0, 0.14);
+    box-shadow:  0 0.125rem rgba(0, 0, 0, 0.12),0 0.125rem 0.25rem rgba(0, 0, 0, 0.14);
     background-color: #fefefe;
-    padding: 0;
-    /* position: sticky;
-    z-index: 500;
-    top:0    */
     width: 100%;
     overflow: hidden;
 }
-
-.f-nav-inner {
+.f-nav-inner{
     margin: 0.25rem;
-    position: static;
+    position: relative;
     flex-grow: 1;
     background-color: #fefefe;
     display: inline-block;
-    box-sizing: border-box;
     width: 100%;
-    color: #0067b8;
 }
-
-.f-nav-container {
+.f-nav-container{
     padding: 0.75rem;
     display: flex;
     column-gap: 0.5rem;
-    align-items: center;
-    box-sizing: border-box;
     cursor: pointer;
-    color: #0067b8;
 }
-
-.f-nav-content-1 {
+.f-nav-content-1{
     display: flex;
     flex-grow: 1;
-    box-sizing: border-box;
     cursor: pointer;
-    color: #0067b8;
 }
-
-.inner-nav-content-1 {
+.inner-nav-content-1{
     display: contents;
     box-sizing: border-box;
     font-weight: 600;
@@ -636,23 +478,13 @@ nav ul li button::after {
     font-family: "SegoeUI";
     color: #004275;
 }
-
-.f-nav-content-2 {
+.f-nav-content-2{
     display: block;
-    align-self: self-end;
+    align-self:self-end;
     box-sizing: border-box;
     margin-right: 7.5px;
 }
-
-/* .drop-img{
-    width: 15.53px;
-    height: 16px;
-    font-size: 1rem;
-    display: inline-flex;
-    color: #0078d4;
-    box-sizing: border-box;
-} */
-.drop-img span::after {
+.f-nav-content-2::after{
     content: "";
     font-family: "Fluent Icons";
     font-weight: 400;
@@ -660,38 +492,96 @@ nav ul li button::after {
     box-sizing: border-box;
     font-size: 1rem;
     cursor: pointer;
+    color: #0067b8;
 }
-
-.f-nav-space {
+.f-nav-space{
     height: 0.25rem;
     width: 100%;
     background-color: #004275;
-    box-shadow: 0 0.125rem rgba(0, 0, 0, 0.12), 0 0.125rem 0.25rem rgba(0, 0, 0, 0.14);
+    box-shadow:  0 0.125rem rgba(0, 0, 0, 0.12),0 0.125rem 0.25rem rgba(0, 0, 0, 0.14);
 }
-
 /*---------end of the future nav-----------*/
-/*---------future main container----------*/
-.feature-content {
+/* ----------------future nav-2-------------- */
+.f-nav-2{
+    display: none;
+    background-color: #fefefe;
+    padding-inline: 56px;
+}
+.f-nav-2 nav{
+    display: flex;
+    height: 66px;
+    justify-content: space-between;
+    /* width: 177px; */
+}
+.f-nav-2 nav ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    column-gap: 48.5px;
+    padding:  0  2px 2px ;
+}
+.f-nav-2 ul li{
+    /* padding-bottom: 2px; */
+    /* margin-top: 16px; */
+    font-weight: 600;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    letter-spacing: -0.03em;
+    color: #004275;
+}
+.f-nav-2 ul li a{
+    text-decoration: none;
+    /* margin-right: 48px; */
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+}
+.f-nav-2 ul li a div{
+    height: 4px;
+    margin-bottom: -4px;
+    border-radius: 4px;
+    background-color: #004275;
+}
+.f-nav-btn{
+    margin-left: 24px;
+    margin-right: -1px;
+    display: flex;
+}
+.f-nav-btn a{
+    padding: 10px 18px;
+    /* border: 1px solid transparent; */
+    background-color: #0078d4;
+    border-radius: 8px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+.f-nav-btn a span{
+    padding-bottom: 0.125rem;
     display: block;
-    box-sizing: border-box;
-    text-align: left;
+    text-align: center;
+    font-size: 0.9375rem;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    line-height: 1.375rem;
+    color: var(--light);
+    width: 142.188px;
+}
+/*---------future main container----------*/
+.feature-content{
+    display: block;
     position: relative;
-    padding: 3.5rem 1rem;
+    padding:3.5rem 1rem ;
     background-image: url(assets/future.avif);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
-
-.feature-head {
+.feature-head{
     display: block;
 }
-
-.f-head-content {
-    display: block;
-}
-
-.f-head1 {
+.f-head1{
     display: block;
     margin: 0 0 0.75rem;
     font-weight: 600;
@@ -699,102 +589,75 @@ nav ul li button::after {
     line-height: 1rem;
     letter-spacing: 0.08em;
 }
-
-.f-head2 {
+.f-head2{
     display: contents;
 }
-
-.f-head2 h2 {
+.f-head2 h2{
     font-weight: 600;
     font-size: 1.5rem;
     line-height: 2rem;
     letter-spacing: -0.05em;
-    margin: 0;
 }
-
-.f-card-container {
+.f-card-container{
     margin-top: 2rem;
-    display: flex;
-    flex-direction: column;
+    display: grid;
     gap: 0.5rem;
-}
-
-.f-inner-card-con {
-    display: flex;
     padding-inline: 0.25rem;
 }
-
-.f-card {
-    display: flex;
-    flex: 0 0 100%;
+.f-card{
+    display:flex;
     background-color: #fefefe;
-    box-shadow: 0 0.125rem rgba(0, 0, 0, 0.12), 0 0.125rem 0.25rem rgba(0, 0, 0, 0.14);
+    box-shadow:  0 0.125rem rgba(0, 0, 0, 0.12),0 0.125rem 0.25rem rgba(0, 0, 0, 0.14);
     flex-direction: column;
-    min-width: 1px;
-    border-radius: 1rem;
-    height: 100%;
+    border-radius:1rem;
 }
-
-.f-image-con {
+.f-image-con{
     display: flex;
     flex-direction: row;
 }
-
-.f-image {
+.f-image{
     margin: 0.5rem 0.5rem 0;
     width: 100%;
     height: 100%;
     display: block;
 }
-
-.f-image img {
-    max-width: 100%;
-    height: auto;
-    object-fit: cover;
-    border-radius: 0.5rem;
-    aspect-ratio: 2.33333/1;
-    width: 100%;
+.f-image img{
+max-width: 100%;
+height: auto;
+object-fit: cover;
+border-radius: 0.5rem;
+aspect-ratio: 2.33333/1;
+width: 100%;
 }
-
-.f-content-con {
+.f-content-con{
     display: flex;
     flex-direction: column;
-    flex: 1 1 auto;
     padding: 1rem;
     justify-content: space-between;
     position: relative;
-    min-width: 1px;
-    word-wrap: break-word;
-    height: 100%;
 }
-
-.f-text-con {
+.f-text-con{
     display: flex;
     flex-direction: column;
     gap: 0.75rem;
     text-align: left;
     align-items: flex-start;
 }
-
-.f-t-head-con {
+.f-t-head-con{
     display: flex;
     flex-direction: row;
     gap: 0.25rem;
 }
-
-.f-t-head {
+.f-t-head{
     display: contents;
 }
-
-.f-t-head h3 {
+.f-t-head h3{
     font-weight: 600;
     font-size: 1.125rem;
     line-height: 1.5rem;
     letter-spacing: -0.03em;
-    margin: 0;
 }
-
-.f-para {
+.f-para{
     display: block;
     font-weight: 400;
     font-size: 1rem;
@@ -802,38 +665,32 @@ nav ul li button::after {
     letter-spacing: -0.03em;
     color: #17253d;
 }
-
-.f-link {
+.f-link{
     margin-top: 2rem;
     display: flex;
     justify-content: flex-start;
     gap: initial;
 }
-
-.f-link a {
+.f-link a{
     display: inline-flex;
     gap: 0.5rem;
     align-items: center;
     text-decoration: none;
 }
-
-.f-link-btn {
+.f-link-btn{
     display: flex;
     gap: 0.25rem;
-    padding: 0.625rem 0.617rem;
-    ;
+    padding: 0.625rem 0.617rem; ;
     justify-content: center;
-    background-color: #0078d4;
+    background-color:#0078d4;
     border-radius: 0.5rem;
     color: var(--light);
 }
-
-.f-link-btn span {
+.f-link-btn span{
     display: flex;
     align-items: center;
 }
-
-.f-link-btn span::before {
+.f-link-btn span::before{
     content: "";
     font-weight: 400;
     line-height: 1;
@@ -841,8 +698,7 @@ nav ul li button::after {
     font-size: .9375rem;
     font-family: "Fluent Icons";
 }
-
-.f-link a .text {
+.f-link a .text{
     font-weight: 600;
     font-size: 0.875rem;
     line-height: 1.25rem;
@@ -850,2378 +706,138 @@ nav ul li button::after {
     color: rgb(0, 66, 117);
     margin-top: -1px;
 }
-
 /*----------- end of the cards section ----------*/
-
 /*---------------- end of the future section -----------*/
-
-/*------------- solution section -------------------*/
-.solution-container {
-    background-color: #f4fafd;
-    display: block;
-    padding: 3.25rem 0 3.5rem;
-    position: relative;
-    background-color: rgb(244, 250, 253);
-    box-sizing: border-box;
-}
-
-.solution {
-    display: block;
-    padding-right: 1rem;
-    padding-left: 1rem;
-    width: 100%;
-    margin-right: auto;
-    margin-left: auto;
-    box-sizing: border-box;
-    text-align: left;
-    color: var(--head-1);
-}
-
-/*---------------solution head------------------*/
-.solution-head {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: -.25rem;
-    margin-right: -.25rem;
-    text-align: left;
-}
-
-.sol-head-inner {
-    padding-right: 0.25rem;
-    padding-left: 0.25rem;
-    flex-basis: 0;
-    flex-grow: 1;
-    max-width: 100%;
-    position: relative;
-    display: block;
-}
-
-.sol-h-main {
-    display: flex;
-    flex-wrap: wrap;
-    column-gap: 0.75rem;
-    row-gap: 0.5rem;
-}
-
-.sol-h-con {
-    margin-inline: initial;
-    padding-inline: initial;
-    display: block;
-}
-
-.sol-h-top {
-    margin: 0 0 0.688rem;
-    color: var(--head-1);
-    display: block;
-}
-
-.sol-h-top div {
-    display: contents;
-    font-weight: 600;
-    font-size: 0.75rem;
-    line-height: 1rem;
-    letter-spacing: 0.08em;
-    font-family: "SegoeUI";
-}
-
-.sol-h-bottom {
-    display: contents;
-    font-weight: 600;
-    font-size: 1.5rem;
-    line-height: 2rem;
-    letter-spacing: -0.05em;
-    font-family: "SegoeUI";
-}
-
-.sol-h-bottom span {
-    margin-bottom: 2px;
-}
-
-/*---------------end of the solution head---------------*/
-/*---------------soltion main container------------------*/
-.sol-content {
-    margin-top: 1.25rem;
-    display: flex;
-    flex-wrap: wrap;
-    margin-right: -.25rem;
-    margin-left: -.25rem;
-    box-sizing: border-box;
-    width: 100%;
-}
-
-.sol-content-inner {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-    padding: 0.25rem;
-    padding: 0.25rem;
-    flex-basis: 0;
-    flex-grow: 1;
-    max-width: 100%;
-    position: relative;
-    width: 100%;
-}
-
-.sol-con-main {
-    display: flex;
-    flex-direction: column;
-}
-
-/*------------------solution nav section------------------*/
-
-.sol-nav-conatiner {
-    display: block;
-    margin-left: 0;
-    margin-right: 0;
-}
-
-.sol-nav-inner {
-    display: block;
-    flex-basis: 0;
-    flex-grow: 1;
-    max-width: 100%;
-    padding-inline: 0px;
-    /* margin-right: 1.125rem; */
-}
-
-.s-nav-main {
-    display: block;
-    overflow-x: scroll;
-    overflow-y: hidden;
-    scrollbar-width: none;
-}
-
-/*---------------nav button--------------------*/
-.sol-nav {
-    width: 740px;
-    display: block;
-}
-
-.sol-nav-content {
-    display: flex;
-    flex-wrap: wrap;
-    position: relative;
-    z-index: 0;
-    justify-content: start;
-    margin-left: 4px;
-    margin-top: 0;
-}
-
-.sol-btn {
-    background-color: rgba(0, 85, 151, 0.1);
-    margin-right: 0.5rem;
-    flex: 0 0 auto;
-    cursor: pointer;
-    padding: 0.5rem 1rem;
-    white-space: nowrap;
-    border-radius: 12.5rem;
-    border: none;
-    display: block;
-}
-
-#sol-btn1 {
-    background-color: #005597;
-    width: 152.41px;
-    height: 40px;
-}
-
-#sol-btn1 span {
-    color: var(--light);
-}
-
-.sol-btn span {
-    padding-bottom: 0.125rem;
-    padding-top: 0.150rem;
-    font-weight: 600;
-    font-size: .9375rem;
-    line-height: 1.375rem;
-    text-align: center;
-    color: #004275;
-    letter-spacing: -0.3px;
-    font-family: "SegoeUI";
-}
-
-.sol-arrow {
-    display: block;
-    color: #004275;
-    position: absolute;
-    right: 4px;
-    top: 3.5px;
-    background: linear-gradient(270deg, #f2f2f2 25%, rgba(242, 242, 242, 0) 100%);
-}
-
-.sol-arrow button {
-    margin: 0;
-    width: 40px;
-    height: 40px;
-    border-radius: 12.5rem;
-    border: 2px solid #004275;
-    background: linear-gradient(270deg, #f2f2f2 25%, rgba(242, 242, 242, 0) 100%);
-
-}
-
-.sol-arrow button::after {
-    content: "";
-    color: #004275;
-    font-size: 1.125rem;
-    font-weight: 400;
-    font-family: "Fluent Icons";
-}
-
-/*-----------------solution nav end-----------------*/
-/*-----------------solution content section------- */
-.sol-text-container {
-    display: flex;
-    flex-wrap: wrap;
-    margin-right: -.25rem;
-    margin-left: -.25rem;
-    box-sizing: border-box;
-}
-
-.sol-text {
-    padding-right: .25rem;
-    padding-left: .25rem;
-    flex-basis: 0;
-    flex-grow: 1;
-    max-width: 100%;
-    position: relative;
-    width: 100%;
-    display: block;
-}
-
-.sol-t-inner {
-    position: relative;
-    /* margin: 1.5rem 0 0 0; */
-    display: block;
-}
-
-.sol-t-main {
-    display: block;
-    margin-bottom: 0;
-    padding-left: 0;
-}
-
-.sol-t-main-content {
-    display: flex;
-    flex-direction: row;
-    position: relative;
-    overflow-x: hidden;
-}
-
-.sol-t-content {
-    display: flex;
-    width: 100%;
-}
-
-/* -----list----------- */
-.sol-t-content ul {
-    display: block;
-    flex-basis: 100%;
-    overflow-x: hidden;
-    overflow-y: auto;
-    list-style: none;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    padding: 0;
-    margin-right: .48rem;
-}
-
-.sol-t-content ul li {
-    display: flex;
-    list-style-type: none;
-}
-
-.sol-li-1-con {
-    display: block;
-    border-bottom: 1px solid #bdc5d2;
-    margin-left: 0;
-    width: 100%;
-    /* margin-right: 1.125rem; */
-}
-
-.sol-li-1-top {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-    border: none;
-}
-
-.sol-li-1-btn {
-    display: flex;
-    align-items: center;
-    color: var(--head-2);
-    justify-content: space-between;
-    flex-direction: row-reverse;
-    width: 100%;
-    cursor: pointer;
-    padding: 1.5rem 0;
-    border: none;
-    gap: 0.5rem;
-    background-color: transparent;
-    text-align: left;
-}
-
-/* #sol-li-1-btn-1{
-
-} */
-#sol-li-1-btn2::before {
-    margin-top: 1.35rem;
-}
-
-#sol-li-1-btn3::before {
-    margin-top: 1.35rem;
-}
-
-.sol-li-1-btn::before {
-    content: "";
-    font-size: 1rem;
-    font-family: "Fluent Icons";
-    text-align: left;
-    color: var(--head-2);
-    line-height: 1.5625rem;
-    list-style-type: none;
-    /* margin-top: auto; */
-}
-
-#sol-li-1-btn-1::before {
-    transform: rotate(-180deg);
-}
-
-.sol-li-1-bottom {
-    display: contents;
-    font-weight: 600;
-    font-size: 1.125rem;
-    line-height: 1.5rem;
-    letter-spacing: -0.03em;
-    font-family: "SegoeUI";
-    word-spacing: 0;
-    /* margin-top:.250rem; */
-}
-
-/* -------------end of list------ */
-
-/* -------------solution drop link----------------- */
-.sol-li-drop-content {
-    display: block;
-    box-sizing: border-box;
-    margin-top: -0.5rem;
-}
-
-.sol-drop-content-inner {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-    padding-bottom: 1.5rem;
-    color: #17253d;
-}
-
-.sol-drop-top {
-    display: block;
-}
-
-.sol-d-content {
-    display: contents;
-    color: #17253d;
-    font-size: 1rem;
-    font-weight: 400;
-    letter-spacing: -0.48px;
-    line-height: 1.5rem;
-    text-align: left;
-    font-family: "SegoeUI";
-}
-
-.sol-drop-bottom {
-    display: block;
-    box-sizing: border-box;
-    margin-top: 1px;
-}
-
-.sol-drop-bottom1 {
-    display: contents;
-}
-
-.sol-drop-bottom1 a {
-    margin-bottom: 1.5rem;
-    color: #004275;
-    cursor: pointer;
-    text-decoration: underline;
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-}
-
-.sol-drop-bottom1 a span {
-    padding-bottom: 0.125rem;
-    color: #004275;
-    font-family: "SegoeUI";
-    font-weight: 600;
-    font-size: 0.875rem;
-    line-height: 1.25rem;
-    letter-spacing: -0.48px;
-}
-
-.sol-drop-bottom2 {
-    display: flex;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-}
-
-.sol-drop-bottom2-top {
-    /* border-radius: 1rem; */
-    display: block;
-    max-width: 100%;
-    height: auto;
-}
-
-.sol-drop-bottom2-top img {
-    display: block;
-    height: inherit;
-    max-width: inherit;
-    object-fit: fill;
-    aspect-ratio: initial;
-    border-radius: 1rem;
-}
-
-.sol-drop-bottom2-bottom {
-    position: absolute;
-    padding: 0.719rem 0.75rem;
-    display: block;
-}
-
-.sol-d-b2-b-inner {
-    display: contents;
-}
-
-.sol-d-b2-b-inner a {
-    display: flex;
-    width: fit-content;
-    align-items: center;
-    justify-content: center;
-    gap: 0.75rem;
-    border: 2px solid transparent;
-    padding: 0.875rem 0.8663rem;
-    position: relative;
-    text-decoration: none;
-    cursor: pointer;
-    background-color: rgb(0, 120, 212);
-    border-radius: 0.5rem;
-    margin-top: 1px;
-}
-
-.sol-drop-img-con {
-    width: 100%;
-    height: 100%;
-    display: inline-flex;
-
-}
-
-.sol-drop-img-con span {
-    display: flex;
-    align-items: center;
-    color: var(--light);
-}
-
-.sol-drop-img-con span::after {
-    content: "";
-    font-weight: 400;
-    line-height: 1;
-    color: inherit;
-    font-family: "Fluent Icons";
-    font-size: 1rem;
-}
-
-/* end of drop link */
-/* -------------end of solution link---------- */
-
-/* ------------solution link ----------------- */
-.sol-link {
-    display: contents;
-}
-
-.sol-link a {
-    text-decoration: none;
-    color: #004275;
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    cursor: pointer;
-}
-
-.sol-link-span {
-    display: flex;
-    align-items: center;
-    padding: 0.625rem;
-    background-color: #0078d4;
-    border-radius: 0.5rem;
-    gap: 0.25rem;
-    justify-content: center;
-    color: var(--light);
-    margin-left: 4px;
-}
-
-.sol-link-span span {
-    display: flex;
-    align-items: center;
-}
-
-.sol-link-span span::before {
-    content: "";
-    font-weight: 400;
-    line-height: 15px;
-    font-family: "Fluent Icons";
-    letter-spacing: -.02em;
-    font-size: .9375rem;
-}
-
-.sol-link-text {
-    padding-bottom: 0.125rem;
-    color: #004275;
-    font-weight: 600;
-    font-size: .875rem;
-    line-height: 1.25rem;
-    cursor: pointer;
-    letter-spacing: -0.49px;
-}
-
-/* -----------end of solution link------------- */
-/* product and service section */
-#pro-ser-container {
-    padding-block: 3rem 3.27rem;
-}
-
-#pro-ser-content {
-    margin-top: 1.75rem;
-}
-
-#pro-ser-inner {
-    margin: 0.5rem 0 0 0;
-}
-
-.pro-ser-card-con {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    padding-inline: 0.25rem;
-    row-gap: 0.75rem;
-
-}
-
-#pro-nav-f-btn {
-    background-color: #005597;
-    padding: 0.55rem 1rem 0.55rem 1rem;
-}
-
-#pro-nav-btn span {
-    padding-top: 0.250rem;
-}
-
-#pro-nav-f-btn span {
-    color: var(--light);
-    /* line-height: 0; */
-}
-
-#pro-ser-arrow {
-    top: 4px;
-}
-
-.pro-f-con {
-    display: block;
-    background-image: url(assets/window.avif);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: auto;
-    border-radius: 1rem;
-    box-shadow: 0 0.125rem rgba(0, 0, 0, 0.12), 0 0.063rem 0.125rem rgba(0, 0, 0, 0.14);
-}
-
-.pro-f-inner {
-    display: flex;
-    padding: 1rem;
-    height: 100%;
-    flex-direction: column;
-}
-
-.empty-div {
-    height: 224px;
-    display: flex;
-}
-
-.s-f-content-con {
-    display: flex;
-    flex-direction: column;
-    gap: 0.75rem;
-    align-items: flex-start;
-}
-
-.s-f-head-con {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    gap: 0.75rem;
-}
-
-.s-f-head {
-    display: flex;
-    align-items: flex-start;
-    gap: 0.25rem;
-    flex-direction: column;
-}
-
-.s-f-h-content {
-    display: contents;
-}
-
-.s-f-h-content h3 {
-    font-weight: 600;
-    font-size: 1.5rem;
-    line-height: 2rem;
-    letter-spacing: -.05em;
-    font-family: "SegoeUI";
-    margin: 0;
-}
-
-.s-f-para-con {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 0.75rem;
-    align-items: flex-start;
-}
-
-.s-f-para-content {
-    display: contents;
-    font-weight: 400;
-    font-size: 1rem;
-    line-height: 1.5rem;
-    letter-spacing: -0.03em;
-}
-
-.s-f-para-btn {
-    display: block;
-    width: 100%;
-}
-
-.s-f-btn-con {
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-    gap: 0.75rem;
-}
-
-.s-f-btn-con a {
-    border: 2px solid transparent;
-    padding: 0.5rem 0.75rem;
-    background-color: #0078d4;
-    color: var(--light);
-    border-radius: 0.5rem;
-    display: inline-block;
-    position: relative;
-    cursor: pointer;
-    text-decoration: none;
-}
-
-.s-f-btn-con a span {
-    display: block;
-    padding-bottom: 0.125rem;
-    text-align: center;
-    font-size: .9375rem;
-    font-weight: 600;
-    line-height: 1.375rem;
-    letter-spacing: -0.02em;
-}
-
-.small-card-con {
-    display: grid;
-    gap: 0.75rem;
-}
-
-.small-card {
-    display: block;
-    max-width: 100%;
-}
-
-.small-inner {
-    display: flex;
-    flex-direction: column;
-    padding: 1rem;
-    background-color: var(--light);
-    border-radius: 1rem;
-    height: auto;
-    box-shadow: 0 0.125rem rgba(0, 0, 0, 0.12), 0 0.063rem 0.125rem rgba(0, 0, 0, 0.14);
-}
-
-.small-top {
-    display: flex;
-    flex-direction: column;
-    gap: 0.75rem;
-}
-
-.small-img {
-    display: inline-flex;
-    background-color: #fefefe;
-    justify-content: center;
-    align-items: center;
-    border: 0.0625rem solid #e6f2fb;
-    width: 2.875rem;
-    height: 2.875rem;
-    border-radius: 0.5rem;
-}
-
-.small-img img {
-    max-width: 24px;
-    max-height: 24px;
-    width: 100%;
-    height: 100%;
-}
-
-.small-text {
-    display: flex;
-    flex-direction: column;
-    gap: 0.75rem;
-    /* margin: -2px 0 0 0; */
-}
-
-.small-head {
-    font-weight: 600;
-    font-size: 1.125rem;
-    line-height: 1.5rem;
-    letter-spacing: -0.54px;
-    font-family: "SegoeUI";
-    color: #0e1726;
-    display: contents;
-}
-
-.small-para {
-    display: contents;
-    letter-spacing: -0.03rem;
-}
-
-.small-para span {
-    font-weight: 400;
-    font-size: 1rem;
-    line-height: 1.5rem;
-    letter-spacing: -0.03em;
-    color: #17253d;
-    font-family: "SegoeUI";
-    text-align: left;
-}
-
-.s-card-bottom {
-    margin-top: 1.12rem;
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: row;
-    gap: initial;
-    text-align: left;
-}
-
-#s-link-content6 {
-    margin-top: 1px;
-}
-
-.s-card-link {
-    display: contents;
-}
-
-.s-card-link a {
-    color: #004275;
-    display: inline-flex;
-    text-decoration: underline;
-    align-items: center;
-    gap: 0.5rem;
-    cursor: pointer;
-    letter-spacing: -0.03em;
-}
-
-.s-card-link a span {
-    padding-bottom: 0.125rem;
-    font-weight: 600;
-    font-size: .875rem;
-    line-height: 1.25rem;
-    cursor: pointer;
-}
-
-.pro-ser-link {
-    display: contents;
-}
-
-.pro-ser-link a {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    cursor: pointer;
-    margin-left: 0.25rem;
-    margin-top: 0.45rem;
-    text-decoration: none;
-}
-
-.pro-ser-link a .image {
-    margin-bottom: 1px;
-    padding: 0.5rem 0.492rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.25rem;
-    border: 2px solid transparent;
-    border-radius: 0.5rem;
-    background-color: #0078d4;
-}
-
-.pro-ser-link a .image span {
-    display: flex;
-    align-items: center;
-    color: var(--light);
-}
-
-.pro-ser-link a .image span::before {
-    content: "";
-    font-family: "Fluent Icons";
-    font-weight: 400;
-    line-height: 1;
-    font-size: .9375rem;
-}
-
-.pro-ser-link a .text {
-    padding-bottom: 0.125rem;
-    color: #004275;
-    font-weight: 600;
-    font-size: .875rem;
-    line-height: 1.25rem;
-    font-family: "SegoeUI";
-    letter-spacing: -0.03rem;
-}
-
-/* end of the product and service section */
-/* --------------gartner section -----------*/
-.gartner {
-    display: block;
-    padding: 3.57rem 1.25rem 3.5rem;
-    position: relative;
-    background-image: url(assets/gartner-img.avif);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-top: -0.07rem;
-}
-
-.gartner-card-con {
-    display: block;
-    width: 100%;
-}
-
-.gartner-card {
-    margin-top: 1.95rem;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    border: 0.0625rem solid #e6f2fb;
-    background: #fefefe;
-    border-radius: 1rem;
-    box-shadow: 0 0.125rem rgba(0, 0, 0, 0.12), 0 0.125rem 0.25rem rgba(0, 0, 0, 0.14);
-    min-width: 1px;
-    position: relative;
-    height: 100%;
-}
-
-.g-image-con {
-    padding: 0.5rem 0.5rem;
-}
-
-.g-image {
-    display: block;
-    height: 100%;
-    width: 100%;
-    min-width: 100%;
-}
-
-.g-image img {
-    width: 100%;
-    height: 100%;
-    max-height: 100%;
-    object-fit: cover;
-    aspect-ratio: 1.33333/1;
-    border-radius: 0.5rem;
-}
-
-.g-content-con {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 2rem;
-    padding: 0.75rem;
-    margin-top: 1.75rem;
-}
-
-.g-text-con {
-    display: flex;
-    gap: 0.75rem;
-    flex-direction: column;
-}
-
-.g-c-head {
-    display: flex;
-    gap: 0.75rem;
-    flex-direction: column;
-    align-items: flex-start;
-    text-align: left;
-}
-
-.g-head {
-    display: contents;
-}
-
-.g-head h2 {
-    font-weight: 600;
-    font-size: 1.5rem;
-    line-height: 2rem;
-    letter-spacing: -0.05em;
-    margin: 0;
-    font-family: "SegoeUI";
-}
-
-.g-c-para {
-    display: block;
-    font-weight: 400;
-    font-size: 1rem;
-    line-height: 1.5rem;
-    letter-spacing: -0.03em;
-    font-family: "SegoeUI";
-    color: #17253d;
-}
-
-.g-btn {
-    display: flex;
-    gap: initial;
-}
-
-.g-btn a {
-    padding: 0.5rem 0.75rem;
-    background-color: #0078d4;
-    color: var(--light);
-    border-radius: 0.5rem;
-    display: inline-block;
-}
-
-.g-button {
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: row;
-    gap: initial;
-    margin-bottom: 0.25rem;
-}
-
-.g-button a {
-    flex-grow: 1;
-    border: 2px solid transparent;
-    padding: 0.5rem;
-    border-radius: 0.5rem;
-    text-decoration: none;
-    background-color: #0078d4;
-    display: inline-block;
-    position: relative;
-    cursor: pointer;
-}
-
-.g-button a span {
-    padding-bottom: 0.125rem;
-    display: block;
-    text-align: center;
-    font-weight: 600;
-    font-size: .9375rem;
-    line-height: 1.375rem;
-    letter-spacing: -.02em;
-    color: #fff;
-    font-family: "SegoeUI";
-}
-
-/* ----------resource section---------- */
-.resource {
-    display: block;
-    background-color: #f4fafd;
-    width: 100%;
-}
-
-.resource-top {
-    display: block;
-}
-
-.resource-t-inner {
-    padding: 3rem 1rem 0 1rem;
-    margin-bottom: 1.5rem;
-}
-
-.r-t-head1 {
-    margin: -4px 0 11px;
-    display: block;
-    text-align: center;
-    padding: 0;
-}
-
-.r-t-head1-con {
-    display: contents;
-    font-weight: 600;
-    font-size: 0.75rem;
-    line-height: 1rem;
-    letter-spacing: 0.96px;
-    text-align: center;
-    text-transform: uppercase;
-    font-family: "SegoeUI";
-    color: #17253d;
-}
-
-.r-t-head2 {
-    display: contents;
-    text-align: center;
-}
-
-.r-t-head2 h2 {
-    font-weight: 600;
-    font-size: 1.75rem;
-    line-height: 2.25rem;
-    letter-spacing: -0.05em;
-    color: #0e1726;
-    margin: 0;
-}
-
-.resource-bottom {
-    display: block;
-}
-
-.resource-b-inner {
-    /* margin-top:-60px; */
-    margin-top: -1rem;
-    padding-inline: 16px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    background-image: url(assets/resource-back-img.avif);
-    background-position-y: -18px;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.r-back-img-con {
-    display: block;
-    height: 100%;
-    position: absolute;
-    top: 2rem;
-    border: 0;
-    max-height: 100%;
-    width: 100%;
-}
-
-.r-back-img {
-    display: flex;
-    width: 100px;
-    height: 100px;
-    max-width: 100%;
-}
-
-#r-back img {
-    width: inherit;
-    max-width: inherit;
-    height: inherit;
-    object-fit: cover;
-    aspect-ratio: initial;
-}
-
-.resource-nav {
-    /* display: flex;
-    flex-direction: column; */
-    display: block;
-    width: 100%;
-    position: relative;
-}
-
-.r-nav-con {
-    display: block;
-}
-
-.r-nav-con-inner {
-    display: flex;
-    flex-direction: row;
-    padding: 0.5rem 0.5rem 0 0.35rem;
-    overflow-x: scroll;
-    overflow-y: hidden;
-    scrollbar-width: none;
-    position: relative;
-}
-
-.r-nav-content {
-    padding: 12px 16px 16px;
-    display: flex;
-    justify-self: center;
-    align-items: center;
-    background: #fefefe;
-    border-right: 1px solid #bdc5bd;
-    box-shadow: 0 0.125rem rgba(0, 0, 0, 0.12), 0 0.063rem 0.125rem rgba(0, 0, 0, 0.14);
-    position: relative;
-}
-
-#r-nav-f-c {
-    border-top-left-radius: 0.5rem;
-    border-bottom-left-radius: 0.5rem;
-}
-
-#r-nav-scroll {
-    display: block;
-    height: 0.25rem;
-    width: 100%;
-    background-color: #004275;
-    border-bottom-left-radius: 0.75rem;
-    position: absolute;
-    bottom: 0;
-    left: 1px;
-}
-
-#r-nav-l-c {
-    border-top-right-radius: 0.5rem;
-    border-bottom-right-radius: 0.5rem;
-}
-
-.r-nav-content a {
-    text-decoration: none;
-    text-align: left;
-    width: 188.328px;
-}
-
-.r-nav-content a span {
-    font-weight: 600;
-    font-size: 1rem;
-    line-height: 1.5rem;
-    letter-spacing: -0.03em;
-    display: block;
-    color: #0e1726;
-    font-family: "SegoeUI";
-}
-
-.scroll-btn {
-    margin: 2.15rem 0 0 0;
-    padding: 0 0 2.5rem 0;
-    display: block;
-    position: relative;
-}
-
-.s-btn-1 {
-    height: 40px;
-    width: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 12.5rem;
-    border: 2px solid rgba(0, 66, 117, 0.12);
-    background-color: #f4fafd;
-    position: absolute;
-    left: -.25rem;
-    top: 0;
-}
-
-.s-btn-1 span::after {
-    content: "";
-    color: #004275;
-    font-weight: 600;
-    font-size: 1.15rem;
-    line-height: 2rem;
-    text-align: center;
-    font-family: "Fluent Icons";
-    opacity: 0.2;
-}
-
-.s-btn-2 {
-    height: 40px;
-    width: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 12.5rem;
-    border: 2px solid #004275;
-    background-color: #f4fafd;
-    position: absolute;
-    right: -.25rem;
-    left: 3rem;
-}
-
-.s-btn-2 span::after {
-    content: "";
-    color: #004275;
-    font-weight: 600;
-    font-size: 1.15rem;
-    line-height: 2rem;
-    text-align: center;
-    font-family: "Fluent Icons";
-}
-
-.r-t-container {
-    padding: 1.65rem 0 2.82rem;
-}
-
-.r-text-container {
-    display: block;
-    position: relative;
-    text-align: center;
-}
-
-.r-text-con {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 0.75rem;
-}
-
-.r-text-con-inner {
-    display: flex;
-    flex-direction: column;
-}
-
-.r-content {
-    display: contents;
-    text-align: center;
-}
-
-.r-content h3 {
-    font-weight: 600;
-    font-size: 1.25rem;
-    line-height: 1.75rem;
-    letter-spacing: -0.05em;
-    display: block;
-    font-family: "SegoeUI";
-    margin: 0;
-}
-
-.r-link {
-    margin-left: -4px;
-    margin-top: 0.25rem;
-}
-
-.r-link .text {
-    margin-top: -1px;
-}
-
-.r-image-container {
-    margin: 1.5rem 0 0 0;
-    padding: 1rem 1.05rem;
-    display: block;
-}
-
-.r-image-container img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 0.5rem;
-    aspect-ratio: 1.780/1;
-}
-
-.azure {
-    display: block;
-    /* background-color: #0067b8; */
-    background-image: url(assets/azure-back.avif);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
-.azure-inner {
-    padding: 3.5rem 1rem 5rem;
-}
-
-.azure-head {
-    display: block;
-    text-align: center;
-}
-
-.azure-head h2 {
-    font-weight: 600;
-    font-size: 2rem;
-    line-height: 2.5rem;
-    letter-spacing: -0.05em;
-    font-family: "SegoeUI";
-    color: #f4fafd;
-    margin: 0;
-}
-
-.azure-para {
-    margin: 1rem 0 0;
-    padding: 0rem 1rem;
-    text-align: center;
-}
-
-.azure-para-content {
-    font-weight: 400;
-    font-size: 1.125rem;
-    line-height: 1.75rem;
-    letter-spacing: -0.03em;
-    display: contents;
-    color: #dceef8;
-    font-family: "SegoeUI";
-}
-
-.azure-btn-con {
-    margin: 1.5rem 0 0;
-    display: block;
-}
-
-.azure-btn {
-    display: flex;
-    width: 100%;
-    background-color: #b3daf0;
-    border-radius: 0.5rem;
-}
-
-.azure-btn a {
-    width: 100%;
-    padding-inline: 0.75rem;
-    padding-block: 0.88rem;
-    text-decoration: none;
-    text-align: center;
-}
-
-.azure-btn a span {
-    padding-bottom: 0.125rem;
-    display: block;
-    font-weight: 600;
-    font-size: 0.9375rem;
-    line-height: 1.375rem;
-    letter-spacing: -0.02em;
-    font-family: "SegoeUI";
-    color: #0e1726;
-}
-
-.customer {
-    display: block;
-    padding: 3rem 1rem 2.55rem;
-    background-image: url("assets/customer-back.avif");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.customer-head {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-}
-
-.cust-head1 {
-    display: block;
-    font-weight: 600;
-    font-size: 0.75rem;
-    line-height: 1rem;
-    letter-spacing: 0.08em;
-    color: #17253d;
-    margin-bottom: 0.75rem;
-}
-
-.cust-head2 {
-    display: contents;
-}
-
-.cust-head2 h2 {
-    font-weight: 600;
-    font-size: 1.5rem;
-    line-height: 2rem;
-    letter-spacing: -0.05em;
-    margin: 0;
-}
-
-.cust-body {
-    margin-top: 1.68rem;
-    display: block;
-}
-
-.cust-body-inner {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-}
-
-.cust-body-top {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-}
-
-.cust-card-con {
-    /* margin-bottom: 79.12px; */
-    display: block;
-    overflow-x: scroll;
-    /* overflow-y: hidden; */
-    scrollbar-width: none;
-}
-
-.cust-card {
-    display: flex;
-    column-gap: 0.75rem;
-    row-gap: 0.5rem;
-    flex-wrap: nowrap;
-    width: auto;
-    padding-inline: 0.45rem;
-}
-
-.cust-card-inner {
-    /* padding: 0.1875rem; */
-    display: block;
-    flex: 0 0 100%;
-}
-
-.cust-card-main {
-    display: flex;
-    flex-direction: column;
-    min-width: 1px;
-    /* height: 100%; */
-    position: relative;
-    border-radius: 1rem;
-    box-shadow: 0 0.125rem rgba(0, 0, 0, 0.12), 0 0.125rem 0.25rem rgba(0, 0, 0, 0.14);
-    background-color: #fefefe;
-}
-
-.cust-card-img-con {
-    display: flex;
-    flex-direction: row;
-}
-
-.cust-card-img {
-    padding: 0.5rem 0.5rem 0 0.5rem;
-    display: block;
-    width: 100%;
-    height: 100%;
-    max-width: 100%;
-}
-
-.cust-card-img img {
-    width: 100%;
-    height: 100%;
-    max-width: 100%;
-    aspect-ratio: 1/0.85;
-    border-radius: 0.5rem;
-    object-fit: cover;
-}
-
-.cust-content-con {
-    display: flex;
-    gap: 0.75rem;
-    padding: 1rem 1.20rem;
-    height: auto;
-    flex-direction: column;
-    flex: 0 0 100%;
-    max-width: 100%;
-}
-
-.cust-c-con-inner {
-    display: flex;
-    gap: 1.5rem;
-    flex-direction: column;
-    position: relative;
-    min-width: 1px;
-    flex: 1 1 auto;
-    /* height: 100%; */
-}
-
-.cust-c-top {
-    display: flex;
-    flex-direction: column;
-    gap: 0.75rem;
-    margin-left: -0.20rem;
-}
-
-.cust-top-img {
-    display: block;
-    margin: -.25rem 0 0 0;
-}
-
-.cust-top-img-inner {
-    display: flex;
-    position: relative;
-    width: 100%;
-    height: 100%;
-    max-width: 100%;
-}
-
-.cust-top-img-inner img {
-    border: 0.0625rem solid #bdc5d2;
-    border-radius: 0.5rem;
-    display: flex;
-    max-width: 100%;
-    height: auto;
-    aspect-ratio: initial;
-}
-
-.cust-c-text {
-    display: block;
-}
-
-.cust-c-text span {
-    font-weight: 600;
-    font-size: 1.25rem;
-    line-height: 1.75rem;
-    letter-spacing: -0.05em;
-    color: #17253d;
-}
-
-.cust-c-bottom {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    /* height: 100%; */
-}
-
-.cust-c-bottom-inner {
-    display: flex;
-    gap: 0.5rem;
-    flex-direction: column;
-    margin-top: 0.875rem;
-    margin-left: -0.20rem;
-}
-
-.cust-c-b-head {
-    display: contents;
-}
-
-.cust-c-b-head h3 {
-    margin: 0;
-    font-weight: 600;
-    font-size: 1rem;
-    line-height: 1.5rem;
-    letter-spacing: -0.03em;
-    color: #0e1726;
-}
-
-.cust-c-b-link-con {
-    display: flex;
-    flex-direction: column;
-    gap: 0.88rem;
-    margin-top: 3px;
-}
-
-.cust-c-b-link {
-    display: flex;
-    flex-direction: row;
-    position: relative;
-    column-gap: 0.75rem;
-}
-
-.cust-c-b-link1 {
-    display: block;
-}
-
-.cust-c-b-link1-1 {
-    display: flex;
-    column-gap: 0.5rem;
-}
-
-.cust-c-b-link1-img {
-    display: block;
-    width: auto;
-    height: auto;
-    max-width: 20px;
-    max-height: 20px;
-    margin: 0;
-    padding: 0;
-}
-
-.cust-c-b-link1-img img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    max-width: 20px;
-    max-height: 20px;
-    margin-top: 2px;
-}
-
-.cust-c-b-link1-1 span {
-    display: contents;
-    text-align: left;
-    letter-spacing: -0.03em;
-}
-
-.cust-c-b-link1-1 span a {
-    text-decoration: underline;
-    font-weight: 600;
-    color: #0067b8;
-    font-size: 0.875rem;
-    line-height: 1.25rem;
-}
-
-.cust-card-btn {
-    margin-top: 1.70rem;
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-    margin-inline: -0.20rem;
-}
-
-.cust-card-btn a {
-    padding: 0.875rem 1.5rem;
-    background-color: #0078d4;
-    color: var(--light);
-    border-radius: 0.5rem;
-    text-decoration: none;
-    text-align: center;
-    display: block;
-}
-
-.cust-card-btn a span {
-    display: block;
-    padding-bottom: 0.125rem;
-    font-weight: 600;
-    font-size: .9375rem;
-    line-height: 1.375rem;
-    letter-spacing: -.02em;
-}
-
-.cust-nxt {
-    padding: 1.15rem 0.5rem 1.15rem;
-    display: block;
-    gap: 1rem;
-}
-
-#c-sroll-btn {
-    margin-top: 0.05rem;
-    margin-left: -0.25rem;
-    padding: 0;
-    display: flex;
-    gap: 0.5rem;
-}
-
-#c-scroll {
-    height: 50px;
-    width: 50px;
-    background: transparent;
-    position: relative;
-    left: 0;
-}
-
-.c-link {
-    padding: 0rem 0 0.4rem;
-    /* margin-top: 0.25rem; */
-    display: block;
-}
-
-.c-link .pro-ser-link .image {
-    margin-top: -2px;
-}
-
-.c-link .pro-ser-link .text {
-    margin-top: -4px;
-}
-
-.N-step {
-    display: block;
-    background-image: url(assets/step-back.avif);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    padding-block: 3.5rem;
-}
-
-.N-step {
-    padding-inline: 1.55rem;
-}
-
-.step {
-    display: block;
-}
-
-.step-head {
-    text-align: center;
-    display: contents;
-}
-
-.step-head h2 {
-    font-weight: 600;
-    font-size: 1.75rem;
-    line-height: 2.25rem;
-    letter-spacing: -0.05em;
-    color: #0e1726;
-    font-family: "SegoeUI";
-    margin: 0;
-}
-
-.step-card-con {
-    margin-top: 1.5rem;
-    display: block;
-}
-
-.step-card {
-    /* display: flex;
-    flex-direction: column; */
-    gap: 0.5rem;
-    /* flex-wrap: wrap; */
-    display: grid;
-}
-
-.st-card {
-    display: flex;
-    flex-direction: column;
-    padding: 1rem 0.95rem 0.93rem;
-    background-color: var(--light);
-    border-radius: 1rem;
-    box-shadow: 0 0.125rem rgba(0, 0, 0, 0.12), 0 0.125rem 0.25rem rgba(0, 0, 0, 0.14);
-
-}
-
-.st-card-con {
-    display: flex;
-    flex-direction: column;
-    gap: 0.75rem;
-    align-items: flex-start;
-    text-align: left;
-}
-
-.st-c-head {
-    display: block;
-    word-wrap: break-word;
-}
-
-.st-c-head-inner {
-    display: contents;
-}
-
-.st-c-head h3 {
-    margin: 0;
-    line-height: 1.5rem;
-}
-
-.st-c-head h3 span {
-    font-weight: 600;
-    font-size: 1.125rem;
-    letter-spacing: -0.03em;
-    font-family: "SegoeUI";
-    word-wrap: break-word;
-}
-
-.st-c-para {
-    display: contents;
-    font-weight: 400;
-    font-size: 1rem;
-    line-height: 1.5rem;
-    letter-spacing: -0.03em;
-    margin: 0;
-    color: #17253d;
-}
-
-.st-c-link {
-    margin-top: 1.5rem;
-    margin-left: -4px;
-}
-
-.st-c-link .image {
-    margin-top: 1px;
-}
-
-.st-c-link .text {
-    margin-top: -1px;
-}
-
-.social-container {
-    display: flex;
-}
-
-.social-con {
-    padding: 0.5rem 1rem 0;
-}
-
-.social {
-    display: flex;
-    flex-direction: column;
-    padding: 0.75rem 0.75rem 0.5rem;
-}
-
-.social-top {
-    display: block;
-    margin-top: 0.75rem;
-    margin-left: -0.5rem;
-}
-
-.social-top a {
-    display: inline-flex;
-    padding: 0.88rem;
-    /* margin-block: 0.5rem; */
-    background-color: #e6e6e6;
-    border-radius: 0.2rem;
-    text-decoration: none;
-    justify-content: center;
-    align-items: center;
-    font-weight: 600;
-    font-size: 0.9375rem;
-    line-height: 1.375rem;
-    font-family: "SegoeUI";
-    color: #0e170e;
-}
-
-.social-top a span {
-    margin-top: -1px;
-    letter-spacing: -0.02em;
-}
-
-.social-top a img {
-    margin-right: 0.5rem;
-    margin-top: 1px
-}
-
-.social a img {
-    max-width: 100%;
-    height: auto;
-    aspect-ratio: 24/24;
-    width: 24px;
-}
-
-.social-bottom {
-    margin-left: 0.75rem;
-    margin-block: 0.62rem 0.65rem;
-    display: flex;
-}
-
-.social a {
-    margin-right: 1rem;
-}
-
-footer {
-    margin-top: 2.60rem;
-    padding-bottom: 30px;
-    background-color: #f2f2f2;
-    min-width: 280px;
-}
-
-.footer-top {
-    display: block;
-    padding: 0 12px;
-}
-
-.f-top {
-    display: grid;
-}
-
-.f-top-inner {
-    padding-inline: 12px;
-}
-
-.top1-inner-head {
-    color: #616161;
-    font-size: 15px;
-    line-height: 20px;
-    padding: 36px 0 4px;
-    font-weight: 600;
-    font-family: "SegoeUI";
-}
-
-.f-top-inner ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.f-top-inner ul li {
-    padding: 8px 0;
-    display: list-item;
-    font-size: 11px;
-    line-height: 1rem;
-    list-style-type: none;
-    color: #616161;
-    font-family: "SegoeUI";
-}
-
-.footer-bottom {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    padding: 30px 24px 16px;
-    margin: 0 auto;
-}
-
-.footer-bottom a {
-    text-decoration: none;
-    color: #616161;
-    font-size: 11px;
-    line-height: 16px;
-    font-weight: 400;
-    text-align: left;
-    font-family: "SegoeUI";
-}
-
-#f-a1 {
-    padding-right: 1.5rem;
-}
-
-#f-a1::before {
-    content: "";
-    font-size: 20px;
-    line-height: 24px;
-    margin-right: 10px;
-    vertical-align: middle;
-    display: inline-block;
-    font-family: "Fluent Icons";
-    color: #616161;
-}
-
-#f-a2 {
-    padding: 4px 24px 0px 0px;
-    margin: 8px 0 20px;
-    display: inline-flex;
-}
-
-#f-a2 img {
-    height: 16px;
-    width: 35px;
-    padding-right: 0.5rem;
-    /* padding-top: 6px; */
-}
-
-.f-ul {
-    margin: 12px 0px 3px;
-    display: block;
-}
-
-.f-ul ul {
-    list-style-type: none;
-    color: #616161;
-    font-size: 11px;
-    line-height: 16px;
-    font-weight: 400;
-    text-align: left;
-    font-family: "SegoeUI";
-    padding-right: 3rem;
-    margin: 0;
-    padding: 0;
-}
-
-.f-ul ul li {
-    float: left;
-    padding-top: 6px;
-    padding-right: 13px;
-}
-
+/* --------------mobile view-------------------- */
 @media screen and (min-width:375px) {
-    #f-f-text {
+    #f-f-text{
         margin-top: -3px;
-    }
-
-    .sol-arrow button {
-        margin-top: 1px;
-    }
-
-    #sol-li-1-b-id1 {
-        line-height: 1.65rem;
-    }
-
-    #sol-li-1-btn-1::before {
-        margin-bottom: 1px;
-    }
-
-    .sol-li-drop-content {
-        margin-top: -0.60rem;
-    }
-
-    #sol-li-1-btn2::before {
-        margin-top: 0;
-    }
-
-    #sol-li-1-btn3::before {
-        margin-top: 1.45rem;
-    }
-
-    #pro-ser-container {
-        padding-block: 2.90rem 3.25rem;
-    }
-
-    #pro-nav-f-btn {
-        padding: 0.59rem 1rem 0.54rem;
-    }
-
-    #pro-ser-arrow {
-        top: 3.5px;
-    }
-
-    #pro-ser-head {
-        margin-top: 1px;
-    }
-
-    #s-link-content4 {
-        margin-top: 1px;
-    }
-
-    #s-link-content6 {
-        margin-top: 0px;
-    }
-
-    .pro-ser-link a {
-        margin-top: 0.5rem;
-    }
-
-    .pro-ser-link a .text {
-        padding-bottom: 0.15rem;
-    }
-
-    .scroll-btn {
-        margin-top: 2.10rem;
-    }
-
-    .card-img-con img {
-        aspect-ratio: 1/0.897;
-    }
-
-    .c-b-link2 {
-        flex-direction: row;
-    }
-
-    .cust-c-bottom {
-        margin-top: 31px;
-    }
-
-    .social-con {
-        padding: 1.40rem 1rem 0.40rem;
-    }
-
-    .social {
-        flex-direction: row;
-    }
-
-    .social-top {
-        margin-top: -2px;
-    }
-
-    .social-top a {
-        padding: 0.93rem 0.90rem 0.90rem;
-        margin-top: -1px;
-    }
-
-    .social-top a img {
-        margin-top: 0.5px;
-    }
-
-    .social-bottom {
-        margin-left: -4px;
-        margin-block: 0.77rem 0rem;
-    }
-
-    .social a {
-        margin-right: 0.95rem
-    }
+    } 
 }
-
 @media screen and (min-width:425px) {
-    #f-f-text {
+    #f-f-text{
         margin-top: -1px;
     }
-
-    .sol-arrow button {
-        margin-top: 0px;
-    }
-
-    #sol-li-1-b-id2 {
-        line-height: 1rem;
-    }
-
-    #sol-li-1-b-id1 {
-        line-height: 1.5rem;
-    }
-
-    #sol-li-1-btn-1::before {
-        margin-bottom: 0px;
-    }
-
-    .sol-li-drop-content {
-        margin-top: -0.5rem;
-    }
-
-    .sol-link-text {
-        margin-top: -2px;
-    }
-
-    #pro-ser-arrow {
-        top: 4px;
-    }
-
-    #s-link-content2 {
-        margin-top: 1px;
-    }
-
-    #s-link-content4 {
-        margin-top: 0px;
-    }
-
-    .pro-ser-link a {
-        margin-top: 0.45rem;
-        padding-top: 1px;
-    }
-
-    .pro-ser-link a .text {
-        margin-top: -2px;
-    }
-
-    .g-image-con {
-        padding-block: 0.45rem;
-    }
-
-    .g-content-con {
-        margin-top: 1.825rem;
-    }
-
-    .r-link .pro-ser-link .text {
-        margin-top: 0px;
-    }
-
-    .azure-btn a {
-        padding-block: 0.87rem;
-    }
 }
-
-@media screen and (min-width:768px) {
-    .content {
-        padding: 0 4rem;
+/* ---------------tablet view------------ */
+@media screen  and (min-width:768px) {
+    .content{
+        padding: 0px 64px;
     }
-
-    .content-4-inner {
+    .content-4-inner{
         flex-direction: row;
     }
-
-    .feature-content {
+    .feature-content{
         padding-inline: 4em;
     }
-
-    .f-inner-card-con {
+    .f-card-container{
         padding-inline: 0 0.25rem;
     }
-
-    .f-para {
-        padding-right: 1.5rem;
+    .f-para{
+        padding-right: 24px;
     }
-
-    #f-f-text {
+    #f-f-text{
         margin-top: -3px;
-    }
-
-    .solution {
-        padding-inline: 3.90rem;
-        margin-left: -2px;
-    }
-
-    .sol-li-1-btn {
-        justify-content: flex-end;
-    }
-
-    #sol-li-1-b-id1 {
-        line-height: 1.65rem;
-    }
-
-    #sol-li-1-btn-1::before {
-        margin-bottom: 1px;
-    }
-
-    .sol-li-drop-content {
-        margin-top: -0.60rem;
-    }
-
-    .sol-arrow button {
-        margin-top: 1px;
-    }
-
-    .solution-head {
-        margin-inline: 0px;
-    }
-
-    #sol-li-1-btn1 {
-        padding-bottom: 1.45rem;
-    }
-
-    #sol-li-1-btn4 {
-        padding-bottom: 1.40rem;
-    }
-
-    #sol-li-1-btn2 {
-        padding-bottom: 1.40rem;
-    }
-
-    #sol-li-1-b-id2 {
-        line-height: 1.65rem;
-    }
-
-    #sol-li-1-btn3 .sol-li-1-bottom {
-        line-height: 1.65rem;
-    }
-
-    #sol-li-1-btn3 {
-        padding-bottom: 1.40rem;
-    }
-
-    #sol-li-1-btn4::before {
-        margin-top: -2px;
-    }
-
-    #sol-li-1-btn2::before {
-        margin-top: -1px;
-    }
-
-    #sol-li-1-btn3::before {
-        margin-top: -1px;
-    }
-
-    .s-f-btn-con {
-        display: block;
-    }
-
-    .sol-link-text {
-        margin-top: 1px;
-    }
-
-    #pro-ser-arrow {
-        top: 3.5px;
-    }
-
-    #pro-ser-container {
-        padding-block: 2.95rem 3.25rem;
-    }
-
-    #small-txt3 {
-        margin-top: 0px;
-    }
-
-    #s-link-content2 {
-        margin-top: 0px;
-    }
-
-    #s-link-content6 {
-        margin-top: 1px;
-    }
-
-    .pro-ser-link a .image {
-        margin-top: -1px;
-    }
-
-    .pro-ser-link a .text {
-        margin-top: -1px;
-    }
-
-    .gartner {
-        padding-inline: 4rem 4.25rem;
-    }
-
-    .g-image-con {
-        padding-block: 0.55rem;
-    }
-
-    .g-content-con {
-        margin-top: 1.70rem;
-    }
-
-    .g-c-para {
-        padding-right: 10px;
-    }
-
-    .g-button {
-        display: block;
-    }
-
-    .g-button a {
-        padding-inline: 0.75rem;
-    }
-
-    .resource-b-inner {
-        padding-inline: 4rem;
-    }
-
-    .azure-inner {
-        padding-inline: 4rem;
-    }
-
-    .azure-btn-con {
-        display: flex;
-        justify-content: center;
-    }
-
-    .azure-btn {
-        width: auto;
-    }
-
-    .azure-btn a {
-        padding-inline: 0.875rem;
-    }
-
-    .customer-head-con {
-        padding-inline: 4rem;
-    }
-
-    .N-step {
-        padding-inline: 4rem;
-    }
-
-    .social-con {
-        padding-inline: 4rem;
-    }
-
-    footer {
-        padding-bottom: 0;
-    }
-
-    .f-top {
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-    .f-ul {
-        margin-top: -3px;
-        display: flex;
-        justify-content: end;
-        margin-right: -3px;
-    }
-
-    .f-ul ul li {
-        padding-right: 26.95px;
-        padding-bottom: 4px;
-    }
-
-    .r-link .pro-ser-link .text {
-        margin-top: -2px;
-    }
-
-    .r-link .pro-ser-link .image {
-        margin-top: 0px;
     }
 }
-
+/* laptop view */
 @media screen and (min-width:1024px) {
-    .header-1 {
+    header{
+        margin-bottom: 0px;
+    }
+    .header1-main{
         display: none;
     }
-
-    .nav-1 {
+    .header2-main{
+        display:flex;
+    }
+    .nav{
         display: none;
     }
-
-    .header-2 {
+    .home{
+        min-height: 630px;
+    }
+    .home-img{
+        position: absolute;
+        top: 3px;
+        left: 0;
+        height: 628px;
+        max-height: none;
+    }
+    .content{
+        position: relative;
+        z-index: 99;
+        background-color:transparent;
+        border-bottom: none;
+        padding-inline: 56px;
+        padding-block: 96px;
+    }
+    .content-space{
+        display: none;
+    }
+    .content-container{
+        margin-top: 3px;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .content-1{
+     margin-bottom: 14px;
+    }
+    .content-2 h1{
+        font-size: 40px;
+        line-height: 48px;
+    }
+    .content-3{
+        padding-right: 48px;
+        margin-top: 24px;
+    }
+    .content-4{
+        margin-top: 32px;
+    }
+    .content-4-inner a{
+        padding: 12px 16px;
+    }
+    .future-nav1{
+        display: none;
+    }
+    .f-nav-2{
         display: block;
     }
-
-    /* .home-img{
-            position: absolute;
-            top: 0;
-            width: 100%;
-        } */
-    .con-main {
-        position: absolute;
-        top: 0;
+    .feature-content{
+        padding: 96px 56px;
+    }
+    .f-head1{
+        margin-bottom: 8px;
+    }
+    .f-card-container{
+        grid-template-columns: repeat(3,1fr);
+        margin-top: 48px;
+        padding-inline: 0 0.5rem;
+        gap: 1rem;
+    }
+    .f-card{
+        border-radius: 1.5rem;
+        display: grid;
+    }
+    .f-image img{
+        border-radius: 1rem;
+    }
+    .f-content-con{
+        padding: 24px;
+    }
+    .f-text-con{
+        gap: 1rem;
+    }
+    .f-para{
+        padding-right: 26px;
+    }
+    #f-text-con3-id{
+        margin-top: -24px;
+    }
+    .f-link{
+        margin-top: 48px;
+    }
+    #f-sec-txt{
+        margin-top: -3px;
     }
 
-    .content-space {
-        display: none;
-    }
-
-    .f-card-container {
-        flex-direction: row;
-    }
-
-    .small-card-con {
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-    .small-inner {
-        padding: 1.5rem;
-    }
-
-    .step-card {
-        grid-template-columns: repeat(3, 1fr);
-    }
 }
