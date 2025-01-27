@@ -195,13 +195,15 @@ nav{
     font-weight: 400;
 }
 .nav-con button{
-    margin: 1px -10px 0 3px;
+    margin: 1px -8px 0 3px;
     padding: 16px 28.73px 16px 12px;
     color:#262626;
     border: 1px solid transparent;
     display: inline-block;
     background-color: transparent;
     position: relative;
+    font-size: 13px;
+    font-weight: 400;
 }
 .nav-con button::after{
     font-family: "Fluent Icons";
@@ -379,7 +381,6 @@ nav{
     margin: 1rem 0 0;
     color: var(--head-2);
     padding-right: 1rem;
-    /* box-sizing: border-box; */
     display:block;
 }
 .content-para{
@@ -513,35 +514,52 @@ nav{
     justify-content: space-between;
     /* width: 177px; */
 }
+.f-nav-ul-con{
+    display: flex;
+    /* margin-top: 1px; */
+    margin: auto;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scrollbar-width: none;
+}
 .f-nav-2 nav ul{
     display: flex;
     list-style: none;
     justify-content: center;
     align-items: center;
-    column-gap: 48.5px;
+    column-gap: 47px;
     padding:  0  2px 2px ;
 }
 .f-nav-2 ul li{
-    /* padding-bottom: 2px; */
-    /* margin-top: 16px; */
     font-weight: 600;
     font-size: 0.875rem;
     line-height: 1.25rem;
     letter-spacing: -0.03em;
     color: #004275;
+    width: max-content;
+    margin-top: -2px;
 }
 .f-nav-2 ul li a{
     text-decoration: none;
-    /* margin-right: 48px; */
     display: flex;
     flex-direction: column-reverse;
     justify-content: space-between;
+    margin-top: 20px;
 }
 .f-nav-2 ul li a div{
     height: 4px;
-    margin-bottom: -4px;
+    /* margin-bottom: -4px; */
+    margin-top: 16px;
     border-radius: 4px;
     background-color: #004275;
+}
+.f-nav-2 ul li a span{
+    font-weight: 600;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    letter-spacing: -0.03em;
+    color: #004275;
+    width: max-content;
 }
 .f-nav-btn{
     margin-left: 24px;
@@ -550,7 +568,6 @@ nav{
 }
 .f-nav-btn a{
     padding: 10px 1.5px;
-    /* border: 1px solid transparent; */
     background-color: #0078d4;
     border-radius: 8px;
     text-decoration: none;
@@ -845,7 +862,6 @@ width: 100%;
 /*-----------------solution nav end-----------------*/
 /*-----------------solution content section------- */
 .sol-text{
-    padding-right: .25rem;
     padding-left:.25rem;
     position: relative;
     width: 100%;
@@ -854,181 +870,137 @@ width: 100%;
 .sol-t-inner{
     position: relative;
     display: block;
+    padding-right: 8px;
 }
 /* -----list----------- */
 .sol-t-inner ul{
+    margin-top:24px;
     display: block;
     list-style: none;
-    margin-right:.48rem;
 }
 .sol-t-inner ul li{
     display: flex;
-    list-style-type: none;
-}
-.sol-li-1-con{
-    display: block;
+    flex-direction: column;
     border-bottom: 1px solid #bdc5d2;
-    margin-left: 0;
-    width: 100%;
 }
-.sol-li-1-top{
+#sol-li-first{
+    display: flex;
+    flex-direction: row;
+}
+#sol-li-con{
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
-    border: none;
 }
-.sol-li-1-btn{
+.sol-list{
     display: flex;
-    align-items:center;
-    color: var(--head-2);
     justify-content: space-between;
     flex-direction: row-reverse;
-    cursor: pointer;
-    padding:1.5rem 0 ;
+    padding-block:24px;
+    background-color: transparent;
     border: none;
-    gap: 0.5rem;
-    background-color:transparent;
-    text-align: left;
+    align-items: center;
+    gap: 8px;
 }
-#sol-li-1-btn2::before{
-    margin-top: 1.35rem;
- }
- #sol-li-1-btn3::before{
-    margin-top: 1.35rem;
- }
-.sol-li-1-btn::before{
-    content: "";
-    font-size: 1rem;
-    font-family:"Fluent Icons";
-    color: var(--head-2);
-    line-height: 1.5625rem;
-}
-#sol-li-1-btn-1::before{
-    transform: rotate(-180deg);
-}
-.sol-li-1-bottom{
-    display: contents;
+.sol-list h3{
     font-weight: 600;
     font-size: 1.125rem;
     line-height: 1.5rem;
     letter-spacing: -0.03em;
-    font-family: "SegoeUI";
-    word-spacing: 0;
+    text-align: left;
+    color: #0e1726;
+    margin-top: auto;
 }
-/* -------------end of list------ */
-
-/* -------------solution drop link----------------- */
-.sol-li-drop-content{
-    display: block;
-    margin-top: -0.5rem;
+.sol-list span{
+    display: flex;
+    align-items: center;
+    height: 25px;
+    margin-top: auto;
 }
-.sol-drop-content-inner{
+.sol-list span::before{
+    font-family:"Fluent Icons" ;
+    content: "";
+    font-size: 16px;
+}
+#sol-list-1{
+    padding-top: 0px;
+}
+#sol-list-1 span::before{
+    transform: rotate(180deg);
+}
+#sol-scroll{
+    width: 8px;
+    height: auto;
+    background-color: #004275;
+    display:none;
+}
+.sol-drop{
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
-    padding-bottom: 1.5rem;
-    color: #17253d;
+    gap: 24px;
+    margin-bottom: 24px;
 }
-.sol-drop-top{
+.sol-drop-para{
     display: block;
-}
-.sol-d-content{
-    display: contents;
     color: #17253d;
-    font-size: 1rem;
     font-weight: 400;
-    letter-spacing: -0.48px;
-    line-height: 1.5rem;
-    text-align: left;
-    font-family: "SegoeUI";
-}
-.sol-drop-bottom{
-    display: block;
-    box-sizing: border-box;
-    margin-top: 1px;
-}
-.sol-drop-bottom1{
-    display: contents;
-}
-.sol-drop-bottom1 a{
-    margin-bottom: 1.5rem;
-    color: #004275;
-    cursor: pointer;
-    text-decoration: underline;
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    text-underline-offset: 0.125rem;
-}
-.sol-drop-bottom1 a span{
-    padding-bottom: 0.125rem;
-    color: #004275;
-    font-family: "SegoeUI";
-    font-weight: 600;
-    font-size: 0.875rem;
-    line-height: 1.25rem;
-    letter-spacing: -0.48px;
-}
-.sol-drop-bottom2{
-    display: flex;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-}
-.sol-drop-bottom2-top{
-    display: block;
-    max-width: 100%;
-    height: auto;
-}
-.sol-drop-bottom2-top img{
-    display: block;
-    height: inherit;
-    max-width: inherit;
-    object-fit: fill;
-    aspect-ratio: initial;
-    border-radius: 1rem;
-}
-.sol-drop-bottom2-bottom{
-    position: absolute;
-    padding: 0.719rem 0.75rem;
-    display: block;
-}
-.sol-d-b2-b-inner{
-    display: contents;
-}
-.sol-d-b2-b-inner a{
-    display: flex;
-    width: fit-content;
-    align-items: center;
-    justify-content: center;
-    gap: 0.75rem;
-    border: 2px solid transparent;
-    padding:0.875rem 0.8663rem;
-    position: relative;
-    text-decoration: none;
-    cursor: pointer;
-    background-color: rgb(0, 120, 212);
-    border-radius: 0.5rem;
-    margin-top: 1px;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.03em;
 }
 .sol-drop-img-con{
+    display: flex;
+    flex-direction: column;
+}
+.sol-drop-img-con a{
+    margin-block :2px 25px;
+    padding-bottom: 0.125rem;
+    text-decoration: underline;
+    text-underline-offset: 0.125rem;
+    color: #004275;
+    font-weight: 600;
+    font-size: 0.85rem;
+    line-height: 1.25rem;
+    letter-spacing: -0.02em;
+}
+.sol-d-img-con {
+    display:flex;
     width: 100%;
     height: 100%;
-    display: inline-flex;
-
-}
-.sol-drop-img-con span{
-    display: flex;
+    max-width: 100%;
+    position: relative;
+    justify-content: center;
     align-items: center;
-    color: var(--light);
 }
-.sol-drop-img-con span::after{
+.sol-d-img-con img{
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    object-fit: fill;
+    border-radius: 16px;
+    aspect-ratio: initial;
+}
+.drop-img-btn{
+    position: absolute;
+    display: block;
+}
+.drop-img-btn a{
+    padding: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0078d4;
+    position: relative;
+    text-decoration: none;
+    border-radius: 8px;
+    margin: 0;
+}
+.drop-img-btn a::after{
     content: "";
     font-weight: 400;
     line-height: 1;
-    color: inherit;
+    color: #fff;
     font-family:"Fluent Icons";
-    font-size: 1rem;
+    font-size: 16px;
 }
 /* end of drop link */
 /* -------------end of solution link---------- */
@@ -1090,6 +1062,7 @@ width: 100%;
 }
 #pro-ser-inner{
     margin: 0.5rem 0 0 0;
+    padding-right: 0px;
 }
 .pro-ser-card-con{
     display: flex;
@@ -1126,7 +1099,6 @@ border-radius: 16px;
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 1rem;
-    /* box-shadow:  0 0.125rem rgba(0, 0, 0, 0.12),0 0.063rem 0.125rem rgba(0, 0, 0, 0.14); */
 }
 .pro-f-inner{
     display: flex;
@@ -1258,11 +1230,6 @@ border-radius: 16px;
 }
 .s-card-bottom{
     margin-top: 30px;
-    /* display: flex;
-    justify-content: flex-start;
-    flex-direction: row;
-    gap: initial;
-    text-align: left; */
     display: block;
 }
 .s-card-bottom a{
@@ -1338,22 +1305,14 @@ border-radius: 16px;
     background-size: cover;
     margin-top: -0.07rem;
 }
-    /* .gartner-card-con{
-        display: block;
-        width: 100%;
-    } */
 .gartner-card{
     margin-top: 1.90rem;
     display:flex;
     flex-direction: column;
-    /* flex-wrap: wrap; */
     border: 0.0625rem solid #e6f2fb;
     background: #fefefe;
     border-radius: 1rem;
     box-shadow:  0 0.125rem rgba(0, 0, 0, 0.12),0 0.125rem 0.25rem rgba(0, 0, 0, 0.14);
-    /* min-width: 1px; */
-    /* position: relative; */
-    /* height: 100%; */
 }
 .g-image-con{
     padding: 0.55rem 0.5rem 0 ;
@@ -1401,8 +1360,6 @@ border-radius: 16px;
     line-height: 2rem;
     letter-spacing: -0.05em;
     color: #0e1726;
-    /* margin: 0; */
-    /* font-family: "SegoeUI"; */
 }
 .g-c-para{
     display:block;
@@ -1410,12 +1367,10 @@ border-radius: 16px;
     font-size: 1rem;
     line-height: 1.5rem;
     letter-spacing: -0.03em;
-    /* font-family: "SegoeUI"; */
     color: #17253d;
 }
 .g-btn{
     display: flex;
-    /* gap: initial; */
 }
 .g-btn a{
     padding: 0.5rem 0.75rem;
@@ -1451,7 +1406,6 @@ border-radius: 16px;
     line-height: 1.375rem;
     letter-spacing: -.02em;
     color: #fff;
-    /* font-family: "SegoeUI"; */
 }
 /* ------------------- garnter end--------------------------- */
 /* -----------------resource section --------------------- */
@@ -1480,9 +1434,7 @@ border-radius: 16px;
     font-size: 0.75rem;
     line-height: 1rem;
     letter-spacing: 0.96px;
-    /* text-align: center; */
     text-transform: uppercase;
-    /* font-family: "SegoeUI"; */
     color: #17253d;
 }
 .r-t-head2{
@@ -1516,46 +1468,15 @@ border-radius: 16px;
     position: relative;
 }
 .resource-b-inner{
-    /* margin-top:-60px; */
     margin-top: -1rem;
     padding-inline: 16px;
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
-    /* position: relative; */
-    /* background-image: url(assets/resource-back-img.avif); */
-    /* background-position-y:-18px ; */
-    /* background-size: cover; */
-    /* background-repeat: no-repeat; */
 }
-/* .r-back-img-con{
-    display: block;
-    height: 100%;
-    position: absolute;
-    top:2rem;
-    border: 0;
-    max-height: 100%;
-    width:100%;
-} */
-/* .r-back-img{
-    display: flex;
-    width: 100px;
-    height: 100px;
-    max-width: 100%;
-} */
-/* #r-back img{
-    width:inherit;
-    max-width:inherit;
-    height: inherit;
-    object-fit: cover;
-    aspect-ratio: initial;
-} */
  #r-back{
     border-radius: 0;
  }
 .resource-nav{
-    /* display: flex;
-    flex-direction: column; */
     display: block;
     width: 100%;
     position: relative;
@@ -1575,8 +1496,6 @@ border-radius: 16px;
 .r-nav-content{
     padding: 12px 16px 16px;
     display: flex;
-    /* justify-self: center; */
-    /* align-items: center; */
     background: #fefefe;
     border-right:1px solid #bdc5bd;
     box-shadow:  0 0.125rem rgba(0, 0, 0, 0.12),0 0.063rem 0.125rem rgba(0, 0, 0, 0.14);
@@ -1791,21 +1710,6 @@ border-radius: 16px;
     #f-f-text{
         margin-top: -3px;
     } 
-    #sol-li-1-b-id1{
-        line-height: 1.65rem;
-    }
-    #sol-li-1-btn-1::before{
-        margin-bottom: 1px;
-    }
-    .sol-li-drop-content{
-        margin-top: -0.60rem;
-    }
-    #sol-li-1-btn2::before{
-        margin-top:0;
-     }
-     #sol-li-1-btn3::before{
-        margin-top:1.45rem;
-     }
      .pro-ser-link a .text{
         padding-bottom: 4px;
      }
@@ -1817,20 +1721,8 @@ border-radius: 16px;
     .sol-arrow button{
         padding-top: 0px;
     }
-    #sol-li-1-b-id2{
-        line-height: 1rem;
-    }
-    #sol-li-1-b-id1{
-        line-height: 1.5rem;
-    }
-    #sol-li-1-btn-1::before{
-        margin-bottom: 0px;
-    }
-    .sol-li-drop-content{
-        margin-top: -0.5rem;
-    }
-    .sol-link-text{
-        margin-top:-2px;
+     #sol-list-big{
+        padding-right:2px;
      }
      .pro-ser-link a .text{
         padding-bottom: 3px;
@@ -1869,54 +1761,14 @@ border-radius: 16px;
     .solution-head{
         margin-inline: 0px;
     }
-    /* .sol-arrow button{
-        margin-top: -1px;
-        padding-top: 2px;
-    } */
-    #sol-li-1-btn-1::before{
-        margin-bottom: 1px;
-    }
-    .sol-li-drop-content{
-        margin-top: -0.55rem;
-    }
-    #sol-li-1-btn1{
-        padding-bottom: 1.40rem;
-    }
-    #sol-li-1-btn1::before{
-        margin-top: -2px;
-    }
-    #sol-li-1-btn4{
-        padding-bottom: 1.40rem;
-    }
-    #sol-li-1-btn2{
-        padding-bottom:1.40rem;
-    }
-    #sol-li-1-b-id2{
-        line-height: 1.65rem;
-    }
-    #sol-li-1-btn3 .sol-li-1-bottom{
-        line-height: 1.65rem;
-    }
-    #sol-li-1-btn3{
-        padding-bottom: 1.45rem;
-    }
-    #sol-li-1-btn4::before{
-      margin-top: -2px;
-    }
-    #sol-li-1-btn2::before{
-        margin-top: -1px;
-    }
-    #sol-li-1-btn3::before {
-        margin-top:-1px;
-    }
-    .s-f-btn-con{
-        display: block;
+    #sol-list-big{
+        padding-right:0px;
     }
     .sol-link-text{
         margin-top:1px;
-     } 
-    #pro-nav-f-btn{
-        padding: 0.56rem 1rem;
+    } 
+    #prosol-li-f
+    {padding: 0.56rem 1rem;
     }
     .gartner{
         padding-inline:4rem 4.25rem;
@@ -1955,9 +1807,9 @@ border-radius: 16px;
     .azure-btn a{
         padding-inline: 0.875rem;
     } 
- }
+}
  @media screen  and (min-width:550px) {
-    .sol-li-1-btn{
+    .sol-list{
         justify-content: flex-end;
     } 
  }
@@ -1980,7 +1832,7 @@ border-radius: 16px;
     }
     .home-img{
         position: absolute;
-        top: 3px;
+        top: 1.5px;
         left: 0;
         height: 672px;
         max-height: none;
@@ -2065,6 +1917,8 @@ border-radius: 16px;
     }
     #solution{
         height: 857px;
+        /* margin-right: 18px; */
+        margin-right: 4px;
     }
     .sol-h-top{
         margin: 0 0 7px;
@@ -2078,30 +1932,43 @@ border-radius: 16px;
     .sol-btn{
         padding-inline: 24px;
     }
-    .sol-li-1-con{
-        margin-left: 48px;
-    }
     .sol-content-inner{
         gap: 2rem;
     }
+     .sol-d-img-con{
+        position: absolute;
+        right: 8px;
+        top:32px;
+        width:59.2%;
+        height: auto;
+     }
+     .sol-d-img-con img{
+        border-radius: 24px;
+     }
     #sol-t-inner-id{
         display: grid;
         grid-template-columns: repeat(3,1fr);
     }
-     .sol-drop-bottom2{
-        position: absolute;
-        top:32px;
-        left: 39.9%;
-        
-     }
-     .sol-drop-bottom2{
-        padding: 0 0.25rem 0 0;
-     }
-     /* .sol-drop-bottom2-top img{
-        object-fit: none;
-        aspect-ratio:  0.95453 / 0.76;   
-        border-radius: 1.5rem;
-     } */
+    .sol-t-inner ul{
+        margin: 32px 12px 0 0;
+        overflow-y: scroll;
+        max-height: 630px;
+    }
+    .sol-li-con{
+        margin-left: 51px;
+    }
+    #sol-li-f{
+        margin-left: 48px;
+    }
+    .sol-list{
+        padding-block: 32px;
+    }
+    #sol-scroll{
+        display: flex;
+    }
+    .sol-drop-img-con a{
+        margin-block: 7px 9px;
+    }
      #pro-ser-container{
         padding-block: 96px 92px;
      }
@@ -2124,6 +1991,9 @@ border-radius: 16px;
      .pro-f-inner{
         padding: 1rem 1.5rem 1.5rem 1.25rem;
      }
+     .s-f-btn-con{
+        display: block;
+     }
      .s-f-btn-con a{
         padding-inline: 16px;
      }
@@ -2133,9 +2003,6 @@ border-radius: 16px;
      .empty-div{
         height: 145px;
     }
-     /* .pro-f-con{
-        border-radius: 1.5rem;
-     } */
     .small-card{
         grid-template-columns: repeat(3,1fr);
         gap: 16px;
@@ -2154,8 +2021,7 @@ border-radius: 16px;
         margin-top: 46px;
     }
     .s-f-content-con{
-        gap: 16px;
-        /* margin-left: 4px; */
+        gap: 16px;  
     }
     .s-f-para-con{
         gap: 16px;

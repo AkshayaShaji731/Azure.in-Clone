@@ -114,6 +114,7 @@
             <!-- future nav 2 -->
             <div class="f-nav-2">
                 <nav>
+                  <div class="f-nav-ul-con">
                     <ul>
                         <li><a href="#">
                                 <div></div><span>Featured news</span>
@@ -123,6 +124,7 @@
                         <li>Resources by role</li>
                         <li>Customer stories</li>
                     </ul>
+                  </div>
                     <div class="f-nav-btn"><a href="#"><span>Get started with Azure</span></a></div>
                 </nav>
             </div>
@@ -258,91 +260,28 @@
                         <!-- solution content section -->
                         <div class="sol-text">
                             <div class="sol-t-inner" id="sol-t-inner-id">
-                                <ul>
-                                    <!-- list item 1 -->
-                                    <li>
-                                        <div class="sol-li-1-con">
-                                            <div class="sol-li-1-top">
-                                                <button class="sol-li-1-btn" id="sol-li-1-btn-1">
-                                                    <div class="sol-li-1-bottom" id="sol-li-1-b-id1">AI</div>
-                                                </button>
-                                                <div class="sol-li-drop-content">
-                                                    <div class="sol-drop-content-inner">
-                                                        <div class="sol-drop-top">
-                                                            <div class="sol-d-content">Build intelligent apps at enterprise
-                                                                scale with the Azure AI portfolio.</div>
-                                                        </div>
-                                                        <div class="sol-drop-bottom">
-                                                            <div class="sol-drop-bottom1">
-                                                                <a href="#"><span>Explore Azure AI solutions</span></a>
-                                                            </div>
-                                                            <div class="sol-drop-bottom2">
-                                                                <div class="sol-drop-bottom2-top">
-                                                                    <img src="assets/sol-drop.avif" alt="sol-drop-img">
-                                                                </div>
-                                                                <div class="sol-drop-bottom2-bottom">
-                                                                    <div class="sol-d-b2-b-inner">
-                                                                        <a href="#">
-                                                                            <div class="sol-drop-img-con"><span></span>
-                                                                            </div>
-                                                                        </a>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
+                                 <ul>
+                                    <li id="sol-li-first"> <span id="sol-scroll"></span>
+                                        <div class="sol-li-con" id="sol-li-f">
+                                            <button class="sol-list" id="sol-list-1">
+                                                <span></span><h3>AI</h3></button>
+                                                <div class="sol-drop">
+                                                    <div class="sol-drop-para">Build intelligent apps at enterprise scale with the Azure AI portfolio.</div>
+                                                    <div class="sol-drop-img-con">
+                                                        <a href="#">Explore Azure AI solutions</a>
+                                                        <div class="sol-d-img-con">
+                                                            <img src="assets/sol-drop.avif" alt="sol-drop">
+                                                            <div class="drop-img-btn"><a href="#"></a></div>
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                    </li>
-                                    <!-- end -->
-                                    <!-- list item 2 -->
-                                    <li>
-                                        <div class="sol-li-1-con">
-                                            <div class="sol-li-1-top">
-                                                <button class="sol-li-1-btn" id="sol-li-1-btn1">
-                                                    <div class="sol-li-1-bottom" id="sol-li-1-b-id2">An adaptive cloud</div>
-                                                </button>
-                                            </div>
                                         </div>
                                     </li>
-                                    <!-- end -->
-                                    <!-- list item 3 -->
-                                    <li>
-                                        <div class="sol-li-1-con">
-                                            <div class="sol-li-1-top">
-                                                <button class="sol-li-1-btn" id="sol-li-1-btn4">
-                                                    <div class="sol-li-1-bottom" id="sol-li-1-b-id2">Migrate to innovate
-                                                    </div>
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <!-- end -->
-                                    <!-- list item 4 -->
-                                    <li>
-                                        <div class="sol-li-1-con">
-                                            <div class="sol-li-1-top">
-                                                <button class="sol-li-1-btn" id="sol-li-1-btn2">
-                                                    <div class="sol-li-1-bottom" id="sol-li-1-b-id2"> Build and modernize
-                                                        intelligent apps</div>
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <!-- end -->
-                                    <!-- list item 5 -->
-                                    <li>
-                                        <div class="sol-li-1-con">
-                                            <div class="sol-li-1-top">
-                                                <button class="sol-li-1-btn" id="sol-li-1-btn3">
-                                                    <div class="sol-li-1-bottom">Azure Innovate & Azure Migrate and
-                                                        Modernize</div>
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <!-- end -->
-                                </ul>
+                                    <li>  <div class="sol-li-con"><button class="sol-list"><span></span><h3>An adaptive cloud</h3></button></div></li>
+                                    <li>  <div class="sol-li-con"><button class="sol-list"><span></span><h3>Migrate to innovate</h3></button></div></li>
+                                    <li>  <div class="sol-li-con"><button class="sol-list"><span></span><h3>Build and modernize intelligent apps</h3></div></button></li>
+                                    <li>  <div class="sol-li-con"><button class="sol-list" id="sol-list-big" ><span></span><h3>Azure Innovate & Azure Migrate and Modernize</h3></div></button></li>
+                                 </ul>
                             </div>
                         </div>
                         <!-- end of solution content -->
