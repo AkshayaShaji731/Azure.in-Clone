@@ -476,7 +476,7 @@ nav{
     line-height: 1.25rem;
     letter-spacing: -0.035em;
     text-align: left;
-    font-family: "SegoeUI";
+    /* font-family: "SegoeUI"; */
     color: #004275;
 }
 .f-nav-content-2{
@@ -512,15 +512,37 @@ nav{
     display: flex;
     height: 66px;
     justify-content: space-between;
+    position: relative;
+    /* margin-left: -12px; */
     /* width: 177px; */
 }
 .f-nav-ul-con{
     display: flex;
     /* margin-top: 1px; */
-    margin: auto;
+    /* margin: auto; */
     overflow-x: scroll;
     overflow-y: hidden;
     scrollbar-width: none;
+    width: 565px;
+}
+.f-nav-btn1{
+    width: 36px;
+    height: 36px;
+    display: block;
+    margin-inline: 8px;
+    border: 2px solid #004275;
+    border-radius: 200px;
+    position: absolute;
+    top: 15px;
+    right: 23.6%;
+    background: linear-gradient(270deg,#fefefe 25%,rgba(242,242,242,0)100%);
+}
+.f-nav-btn1::after{
+    content: "";
+    font-family: "Fluent Icons";
+    font-size: 18px;
+    font-weight: 400;
+    color: #004275;
 }
 .f-nav-2 nav ul{
     display: flex;
@@ -1531,7 +1553,7 @@ border-radius: 16px;
     letter-spacing: -0.03em;
     display: block;
     color: #0e1726;
-    font-family: "SegoeUI";
+    /* font-family: "SegoeUI"; */
 }
 .scroll-btn{
     margin: 34px 0 0 0;
@@ -1614,8 +1636,8 @@ border-radius: 16px;
     line-height: 1.75rem;
     letter-spacing: -0.05em;
     display: block;
-    font-family: "SegoeUI";
-    margin: 0;
+    /* font-family: "SegoeUI"; */
+    /* margin: 0; */
 }
 .r-link{
     margin-left: -4px;
@@ -1705,6 +1727,530 @@ border-radius: 16px;
     /* font-family: "SegoeUI"; */
     color: #0e1726;
 }
+/*------------ azure end---------------- */
+/* ---------customer section------------ */
+.customer{
+    display: block;
+    padding: 3rem 1rem 2.50rem;
+    background-image: url("assets/customer-back.avif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+.customer-head{
+    /* display: flex;
+    flex-direction: column;
+    position: relative; */
+    display: block;
+}
+.cust-head1{
+    display:block;
+    font-weight: 600;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    letter-spacing: 0.08em;
+    color: #17253d;
+    margin-bottom: 0.75rem;
+}
+.cust-head2{
+    display: contents;
+}
+.cust-head2 h2{
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    letter-spacing:-0.05em;
+    /* margin: 0; */
+}
+.cust-body{
+    margin-top: 1.68rem;
+    display: block;
+}
+.cust-body-inner{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.cust-body-top{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.cust-card-con{
+    /* margin-bottom: 79.12px; */
+    display: block;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scrollbar-width: none;
+}
+.cust-card{
+    display: flex;
+    column-gap: 0.75rem;
+    row-gap: 0.5rem;
+    flex-wrap: nowrap;
+    width: auto;
+    padding-inline: 0.45rem;
+}
+.cust-card-inner{
+    /* padding: 0.1875rem; */
+    display: block;
+    flex: 0 0 100%;
+}
+.cust-card-main{
+    /* display: block; */
+    display: flex;
+    flex-direction: column;
+    min-width: 1px;
+    height: 100%;
+    position: relative;
+    border-radius: 1rem;
+    box-shadow:  0 0.125rem rgba(0, 0, 0, 0.12),0 0.125rem 0.25rem rgba(0, 0, 0, 0.14);
+    background-color: #fefefe;
+}
+.cust-card-img-con{
+    display: flex;
+    flex-direction: row;
+}
+.cust-card-img{
+    padding: 0.5rem 0.5rem 0 0.5rem;
+    display: block;
+    width: 100%;
+    /* height: 100%; */
+    height: auto;
+    max-width: 100%;
+}
+.cust-card-img img{
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    aspect-ratio:1/0.85;
+    /* aspect-ratio: initial; */
+    border-radius: 0.5rem;
+    object-fit: cover;
+}
+.cust-content-con{
+    display: flex;
+    gap: 0.75rem;
+    padding: 16px 15px 16px 16px;
+    height: 100%;
+    /* padding: 16px; */
+    flex-direction: column;
+    /* flex: 0 0 100%; */
+    max-width: 100%;
+}
+.cust-c-con-inner{
+    display: flex;
+    gap: 1.5rem;
+    flex-direction: column;
+    position: relative;
+    min-width: 1px;
+    /* flex: 1 1 auto; */
+    height: 100%;
+}
+.cust-c-top{
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    /* margin-left: -0.20rem; */
+}
+.cust-top-img{
+    display: block;
+    /* margin: -.25rem 0 0 0; */
+}
+.cust-top-img-inner{
+    display: flex;
+    position: relative;
+    width: unset;
+    height: auto;
+    max-width: 100%;
+}
+.cust-top-img-inner img{
+    border: 0.0625rem solid #bdc5d2;
+    border-radius: 0.5rem;
+    /* display: flex; */
+    width: 173px;
+    max-width: 100%;
+    height:73px;
+    object-fit:cover ;
+    aspect-ratio: initial;
+}
+.cust-c-text{
+    display: block;
+    font-weight: 600;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    letter-spacing:-0.05em;
+    color: #17253d;
+}
+.cust-c-bottom{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100%;
+}
+.cust-c-bottom-inner{
+    display: flex;
+    gap: 0.5rem;
+    flex-direction: column;
+    /* margin-top: 0.875rem; */
+    /* margin-left: -0.20rem; */
+}
+.cust-c-b-head{
+    display: contents;
+}
+.cust-c-b-head h3{
+    margin: 0;
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    letter-spacing: -0.03em;
+    color: #0e1726;
+}
+.cust-c-b-link-con{
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    column-gap: 0.5rem;
+    row-gap:0.88rem;
+    margin-top: 3px;
+}
+#cust-card-2 .cust-c-b-link-con{
+    row-gap: 1.08rem;
+}
+.cust-c-b-link{
+    display: flex;
+    flex-direction:row;
+    position: relative;
+    column-gap: 0.75rem;
+}
+.cust-c-b-link1{
+    display: block;
+}
+.cust-c-b-link1-1{
+    display: flex;
+    column-gap: 0.5rem;
+}
+.cust-c-b-link1-img{
+    display: block;
+    width: auto;
+    height: auto;
+    max-width: 20px;
+    max-height: 20px;
+    /* margin: 0; */
+    /* padding: 0; */
+}
+.cust-c-b-link1-img img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    max-width: 20px;
+    max-height: 20px;
+    margin-top: 2px;
+}
+.cust-c-b-link1-1 span{
+    display: contents;
+    text-align: left;
+    letter-spacing: -0.03em;
+}
+.cust-c-b-link1-1 span a{
+    text-decoration: underline;
+    font-weight: 600;
+    color: #0067b8;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+}
+.cust-card-btn{
+    /* margin-top: 1.70rem; */
+    margin-top: 27px;
+    display:flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    /* margin-inline: -0.20rem; */
+}
+.cust-card-btn a{
+    /* padding:0.875rem 1.5rem; */
+    background-color: #0078d4;
+    padding: 14px 12px;
+    color: var(--light);
+    border-radius: 0.5rem;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+}
+.cust-card-btn a span{
+    display: block;
+    padding-bottom: 0.125rem;
+    font-weight: 600;
+    font-size: .9375rem;
+    line-height: 1.375rem;
+    letter-spacing: -.02em;
+}
+.cust-nxt{
+    padding:1.15rem 0.5rem 1.15rem;
+    display: block;
+    gap: 1rem;
+}
+#c-sroll-btn{ 
+ margin-top:0.05rem;
+ margin-left: -0.25rem;
+ padding: 0;
+ display: flex;
+ gap: 0.5rem;
+}
+#c-scroll{
+    height: 50px;
+    width: 50px;
+    background: transparent;
+    position: relative;
+    left: 0;
+}
+.c-link{
+    padding: 0rem 0 0.4rem;
+    /* margin-top: 0.25rem; */
+        display: block;
+    }   
+    .c-link .pro-ser-link .image{
+        margin-top: -2px;
+    }
+    .c-link .pro-ser-link .text{
+        margin-top: -3px;
+    }
+.N-step{
+    display: block;
+    background-image: url(assets/step-back.avif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-block: 3.5rem;
+    padding-inline: 24px;
+}
+.step{
+    display: block;
+}
+.step-head{
+    text-align: center;
+    display: contents;
+}
+.step-head h2{
+    font-weight: 600;
+    font-size: 1.75rem;
+    line-height: 2.25rem;
+    letter-spacing: -0.05em;
+    color:#0e1726;
+}
+.step-card{
+    gap: 0.5rem;
+    display: grid;
+    margin-top: 24px;
+}
+.st-card{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 16px 16px 15px;
+    background-color: var(--light);
+    border-radius: 1rem;
+    box-shadow:  0 0.125rem rgba(0, 0, 0, 0.12),0 0.125rem 0.25rem rgba(0, 0, 0, 0.14);
+    
+}
+.st-card-con{
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    text-align: left;
+}
+.st-c-head{
+    display:block;
+}
+.st-c-head h3{
+    line-height: 1.5rem;
+    font-weight: 600;
+    font-size: 1.125rem;
+    letter-spacing: -0.03em;
+}
+.st-c-para{
+    display: contents;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    letter-spacing: -0.03em;
+    color: #17253d;
+}
+.st-c-link{
+    margin-top: 23px;
+    margin-left: -4px;
+}
+.st-c-link .image{
+    margin-top: 1px;
+}
+.st-c-link .text{
+    margin-top: -1px;
+}
+/*--------- customer end----------------------- */
+/* ------------social media----------- */
+.social-container{
+    /* display: flex; */
+    display: block;
+    margin: 0 0 -48px;
+    padding: 24px 16px;
+}
+/* .social-con{
+    padding: 0.5rem 1rem 0;
+} */
+.social{
+    display: flex;
+    flex-direction: column;
+    padding-left: 4px;
+    /* align-items: center ; */
+    /* padding: 0.75rem 0.75rem 0.5rem; */
+}
+.social-top{
+    display: block;
+    /* margin-top:0.75rem; */
+    /* margin-left: -0.5rem; */
+    margin-block: 8px;
+}
+.social-top a{
+    display:inline-flex;
+    padding: 14px;
+    /* margin-block: 0.5rem; */
+    background-color: #e6e6e6;
+    border-radius: 0.2rem;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-size: 0.9375rem;
+    line-height: 1.375rem;
+    /* font-family: "SegoeUI"; */
+    color: #0e170e;
+}
+.social-top a span{
+    /* margin-top: -1px; */
+    letter-spacing: -0.02em;
+}
+.social-top a img{
+    margin-right: 0.5rem;
+    margin-top: 1px
+}
+.social a img{
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 24/24;
+    width: 24px;
+}
+.social-bottom {
+    margin-left: 20px;
+    margin-block: 2px;
+    /* margin-block:0.62rem 0.65rem; */
+    display: flex;
+}
+.social-bottom  a{
+    margin-right:24px;
+}
+/* -----------end of social media----------- */
+/* ----------------footer--------------- */
+footer{
+    margin-top:58px;
+    padding-bottom:30px;
+    background-color: #f2f2f2;
+    min-width: 280px;
+}
+.footer-top{
+    display: block;
+    padding: 0 12px;
+}
+.f-top{
+    display: grid;
+}
+.f-top-inner{
+    padding-inline:12px;
+}
+.top1-inner-head{
+    color: #616161;
+    font-size: 15px;
+    line-height: 20px;
+    padding: 36px 0 4px;
+    font-weight: 600;
+    /* font-family: "SegoeUI"; */
+}
+.f-top-inner ul{
+    list-style: none;
+    /* padding: 0; */
+    /* margin: 0; */
+}
+.f-top-inner ul li{
+    padding: 8px 0;
+    display: list-item;
+    font-size: 11px;
+    line-height: 1rem;
+    list-style-type: none;
+    color: #616161;
+    /* font-family: "SegoeUI"; */
+}
+.footer-bottom{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 30px 24px 16px;
+    margin: 0 auto;
+}
+.footer-bottom a{
+    text-decoration: none;
+    color: #616161;
+    font-size: 11px;
+    line-height: 16px;
+    font-weight: 400;
+    text-align: left;
+    /* font-family: "SegoeUI"; */
+}
+#f-a1{
+    padding-right: 1.5rem;
+}
+#f-a1::before{
+    content: "";
+    font-size: 20px;
+    line-height: 24px;
+    margin-right: 10px;
+    vertical-align: middle;
+    display: inline-block;
+    font-family:"Fluent Icons";
+    color: #616161;
+}
+#f-a2{
+    padding: 4px 24px 0px 0px;
+    margin: 8px 0 20px;
+    display: inline-flex;
+}
+#f-a2 img{
+    height: 16px;
+    width: 35px;
+    padding-right: 0.5rem;
+    /* padding-top: 6px; */
+}
+.f-ul{
+    margin:12px 0px 3px;
+    display: block;
+}
+.f-ul ul{
+    list-style-type: none;
+    color: #616161;
+    font-size: 11px;
+    line-height: 16px;
+    font-weight: 400;
+    text-align: left;
+    /* font-family: "SegoeUI"; */
+    padding-right: 3rem;
+    /* margin: 0; */
+    /* padding: 0; */
+}
+.f-ul ul li{
+    float: left;
+    padding-top: 6px;
+    padding-right: 13px;
+}
+/*---------------- end of the footer-------------- */
 /* --------------mobile view-------------------- */
 @media screen and (min-width:375px) {
     #f-f-text{
@@ -1713,6 +2259,11 @@ border-radius: 16px;
      .pro-ser-link a .text{
         padding-bottom: 4px;
      }
+     /* .customer{
+        height: 1085.83px;
+        padding: 0;
+        overflow: hidden;
+     } */
 }
 @media screen and (min-width:425px) {
     #f-f-text{
@@ -1733,6 +2284,9 @@ border-radius: 16px;
     .pro-ser-link a .text{
         padding-bottom: 0px;
      }
+     /* .customer{
+        height: 1076.73px;
+     } */
 }
 /* ---------------tablet view------------ */
 @media screen  and (min-width:540px) {
@@ -1807,13 +2361,88 @@ border-radius: 16px;
     .azure-btn a{
         padding-inline: 0.875rem;
     } 
+    .customer{
+      padding-inline: 64px;
+    }
+    .cust-card-btn{
+        flex-direction: row;
+    }
+    .N-step{
+        padding-inline: 64px;
+    }
+    .step-card{
+        padding-right: 8px;
+    }
+    .st-card-con{
+        padding-right: 16px;
+    }
+    .social-container{
+    padding: 24px 64px;
+    }
+    .social-top a{
+        padding-top: 15px;
+    }
+    footer{
+        padding-bottom: 0px;
+    }
+    .f-top{
+        grid-template-columns: repeat(3,1fr);
+    }
+    .f-ul  ul li{
+        padding: 6px 7px 0 6px;
+    }
 }
  @media screen  and (min-width:550px) {
     .sol-list{
         justify-content: flex-end;
     } 
  }
+ @media screen and (min-width:571px) {
+    .social{
+        align-items: center;
+     }
+    .social{
+        flex-direction: row;
+    }  
+    .social-top a{
+        padding-right: 14px;
+    } 
+    /* .social-bottom{
+        margin-left: 14px;
+    } */
+    .social-bottom{
+        margin-bottom:-4px;
+     }
+     .social-container{
+        padding-inline: 64px;
+     }
+     .social-bottom{
+        margin-left: 12px;
+    }
+    footer{
+        margin-top: 48px;
+    }
+ }
 /* laptop view */
+@media screen and (min-width:768px) {
+    footer{
+        padding-bottom: 0px;
+    }
+    .f-ul{
+        margin-top: 3px;
+    }
+    .f-ul ul {
+        display: flex;
+        justify-content: flex-end;
+        padding-left: 0px;
+    }
+    .f-ul  ul li{
+        padding: 0px 27px 4px 0px;
+    }
+    #f-lst{
+        padding-right: 24px;
+    }
+}
 @media screen and (min-width:860px) {
     header{
         margin-bottom: 0px;
@@ -1913,11 +2542,9 @@ border-radius: 16px;
         margin-top: -3px;
     }
     .solution-container{
-        padding:92px 56px 96px 54px;
+        padding:92px 56px 88px 54px;
     }
     #solution{
-        height: 857px;
-        /* margin-right: 18px; */
         margin-right: 4px;
     }
     .sol-h-top{
@@ -2120,5 +2747,68 @@ border-radius: 16px;
      }
      .azure-btn a{
         padding:  14px 18px;
+     }
+     .customer{
+       padding-inline: 56px;
+     }
+      .cust-card-main{
+        flex-direction: row-reverse;
+      }
+      .cust-card-img{
+        padding: 8px 8px 8px 0px;
+      }
+      .cust-content-con{
+        padding: 24px;
+      }
+      .cust-c-top{
+        gap: 16px;
+      }
+      .cust-c-con-inner{
+        gap: 32px;
+      }
+      .cust-card-btn{
+        margin-top: 32px;
+      }
+      .cust-icon{
+        display: block;
+      }
+      .cust-nxt{
+        display: none;
+      }
+     .N-step{
+        padding-block: 95px 96px;
+        padding-inline: 56px;
+     }
+     .step-head h2{
+        font-size: 1.875rem;
+     }
+     .step-card{
+        grid-template-columns: repeat(3,1fr);
+        column-gap: 16px;
+        margin-top: 32px;
+        padding-right: 16px;
+     }
+     .st-card{
+        border-radius: 24px;
+        padding: 24px;
+     }
+     .st-card-con{
+        padding-right: 24px;
+        gap: 16px;
+     }
+     .st-c-link{
+        margin-top: 47px;
+     }
+     .social-bottom{
+        margin-bottom:-2px;
+     }
+     .social-container{
+        padding-inline: 56px;
+     }
+     .social-top a{
+        padding-left: 18px;
+        padding-right: 18px;
+        padding-top: 14px;
+        padding-bottom: 14px;
      }
 }
