@@ -33,14 +33,28 @@
                 <nav>
                     <div class="nav-con">
                         <a href="#" id="nav-content">Explore</a>
-                        <button>Products</button>
-                        <button>Solutions</button>
-                        <button>Pricing</button>
-                        <button>Partners</button>
-                        <button>Resources</button>
+                        <div class="nav-con-btn">
+                            <button>Products</button>
+                            <button>Solutions</button>
+                            <button>Pricing</button>
+                            <button>Partners</button>
+                            <button>Resources</button> 
+                        </div>
+                        <!-- <button id="nav-more">More</button> -->
                     </div>
                 </nav>
-                <button class="h2-search-btn"></button>
+                <div class="search-con">
+                    <button class="h2-search-btn"></button>
+                <nav class="nav-2-con">
+                    <ul>
+                        <li><a href="#">Learn</a></li>
+                        <li><a href="#">Support</a></li>
+                        <li><a href="#">Contact Sales</a></li>
+                        <li><a href="#" style="background-color: blue;">Get started with Azure</a></li>
+                        <li><a href="#">Sign in</a></li>
+                    </ul>
+                </nav>
+                </div>
             </div>
         </header>
         <!-- header end -->
@@ -203,7 +217,7 @@
                             </div>
                         </div>
                         <div class="f-content-con">
-                            <div class="f-text-con">
+                            <div class="f-text-con" id="f-text-con3-id2">
                                 <div class="f-t-head-con">
                                     <div class="f-t-head">
                                         <h3>See new AI use cases in the Cloud Cultures series<h3>
@@ -263,26 +277,36 @@
                         <div class="sol-text">
                             <div class="sol-t-inner" id="sol-t-inner-id">
                                  <ul>
-                                    <li id="sol-li-first"> <span id="sol-scroll"></span>
+                                     <!-- <span id="sol-scroll"></span> -->
+                                    <li id="sol-li-first"> 
+                                        <span id="sol-scroll"></span>
                                         <div class="sol-li-con" id="sol-li-f">
                                             <button class="sol-list" id="sol-list-1">
-                                                <span></span><h3>AI</h3></button>
+                                                <span></span><h3 id="sol-lst-h3">AI</h3></button>
                                                 <div class="sol-drop">
                                                     <div class="sol-drop-para">Build intelligent apps at enterprise scale with the Azure AI portfolio.</div>
                                                     <div class="sol-drop-img-con">
                                                         <a href="#">Explore Azure AI solutions</a>
                                                         <div class="sol-d-img-con">
                                                             <img src="assets/sol-drop.avif" alt="sol-drop">
+                                                             <!-- <picture>
+                                                                <source media="(min-width: )" srcset="">
+                                                                <source srcset="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/386597-desktop-vertical-accordion-solutions-featured-tab-1-800x636?resMode=sharp2&amp;op_usm=1.5,0.65,15,0&amp;wid=1600&amp;hei=1273&amp;qlt=100&amp;fmt=png-alpha&amp;fit=constrain" media="(min-width: 1400px)">
+                                                                <source srcset="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/386597-desktop-vertical-accordion-solutions-featured-tab-1-800x636?resMode=sharp2&amp;op_usm=1.5,0.65,15,0&amp;wid=1600&amp;hei=1273&amp;qlt=100&amp;fmt=png-alpha&amp;fit=constrain" media="(min-width: 1084px)">
+                                                                <source srcset="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/386597-desktop-vertical-accordion-solutions-featured-tab-1-800x636?resMode=sharp2&amp;op_usm=1.5,0.65,15,0&amp;wid=1600&amp;hei=1273&amp;qlt=100&amp;fmt=png-alpha&amp;fit=constrain" media="(min-width: 1084px)">
+                                                                <source srcset="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/386597-desktop-vertical-accordion-solutions-featured-tab-1-800x636?resMode=sharp2&amp;op_usm=1.5,0.65,15,0&amp;wid=1600&amp;hei=1273&amp;qlt=100&amp;fmt=png-alpha&amp;fit=constrain" media="(min-width: 1084px)">
+                                                                <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/386597-mobile-vertical-accordion-solutions-featured-tab-1-328x270?resMode=sharp2&amp;op_usm=1.5,0.65,15,0&amp;wid=656&amp;hei=540&amp;qlt=100&amp;fmt=png-alpha&amp;fit=constrain"  alt="drop-img">
+                                                             </picture> -->
                                                             <div class="drop-img-btn"><a href="#"></a></div>
                                                         </div>
                                                     </div>
                                                 </div>
                                         </div>
                                     </li>
-                                    <li>  <div class="sol-li-con"><button class="sol-list"><span></span><h3>An adaptive cloud</h3></button></div></li>
-                                    <li>  <div class="sol-li-con"><button class="sol-list"><span></span><h3>Migrate to innovate</h3></button></div></li>
-                                    <li>  <div class="sol-li-con"><button class="sol-list"><span></span><h3>Build and modernize intelligent apps</h3></div></button></li>
-                                    <li>  <div class="sol-li-con"><button class="sol-list" id="sol-list-big" ><span></span><h3>Azure Innovate & Azure Migrate and Modernize</h3></div></button></li>
+                                    <li>  <div class="sol-li-con"><button class="sol-list"><span></span><h3 id="sol-lst-h3">An adaptive cloud</h3></button></div></li>
+                                    <li>  <div class="sol-li-con"><button class="sol-list"><span></span><h3 id="sol-lst-h3">Migrate to innovate</h3></button></div></li>
+                                    <li>  <div class="sol-li-con"><button class="sol-list"><span id="sol-list-span"></span><h3>Build and modernize intelligent apps</h3></div></button></li>
+                                    <li>  <div class="sol-li-con"><button class="sol-list" id="sol-list-big" ><span id="sol-list-span"></span><h3>Azure Innovate & Azure Migrate and Modernize</h3></div></button></li>
                                  </ul>
                             </div>
                         </div>
@@ -375,8 +399,7 @@
                                         <div class="small-img"><img src="assets/s-img-2.svg" alt="s-img-1"></div>
                                         <div class="small-text" id="small-txt">
                                             <div class="small-head"><span>Azure AI Foundry</span></div>
-                                            <div class="small-para"><span>Build, evaluate, and deploy generative AI solutions
-                                                    and custom agents.</span></div>
+                                            <div class="small-para"><span>Build, evaluate, and deploy generative AI solutions and custom agents.</span></div>
                                         </div>
                                     </div>
                                     <div class="s-card-bottom">
@@ -427,8 +450,7 @@
                                         <div class="small-img"> <img src="assets/s-img-6.svg" alt="s-img-1"></div>
                                         <div class="small-text" id="small-txt">
                                             <div class="small-head"><span>Azure AI Search</span></div>
-                                            <div class="small-para"><span>Deliver accurate, hyper-personalized responses in your
-                                                    generative AI applications.</span></div>
+                                            <div class="small-para"><span>Deliver accurate, hyper-personalized responses in your generative AI applications.</span></div>
                                         </div>
                                     </div>
                                     <div class="s-card-bottom">
@@ -579,7 +601,7 @@
             </div>
             <div class="cust-body">
                 <div class="cust-body-inner">
-                    <div class="cust-body-top">
+                    <div class="cust-body-top"> 
                         <div class="cust-card-con">
                             <div class="cust-card">
                                 <div class="cust-card-inner" id="cust-card-1"> 
@@ -647,7 +669,7 @@
                                     <div class="cust-card-main">
                                         <div class="cust-card-img-con">
                                             <div class="cust-card-img">
-                                                <img src="assets/cus2.avif" alt="card2-img" style="aspect-ratio: initial;">
+                                                <img src="assets/cus2.avif" alt="card2-img">
                                             </div>
                                           </div>
                                             <div class="cust-content-con">
@@ -694,7 +716,7 @@
                                     <div class="cust-card-main">
                                         <div class="cust-card-img-con">
                                             <div class="cust-card-img">
-                                                <img src="assets/cus3.avif" alt="card-img" style="aspect-ratio: 1/0.92;">
+                                                <img src="assets/cus3.avif" alt="card-img">
                                             </div>
                                           </div>
                                             <div class="cust-content-con">
@@ -723,7 +745,7 @@
                                                                     <div class="cust-c-b-link1">
                                                                        <div class="cust-c-b-link1-1">
                                                                          <div class="cust-c-b-link1-img"><img src="assets/aks.svg" alt="AKS"></div>
-                                                                         <span><a href="#">Azure Kubernetes Service(AKS)</a></span>
+                                                                         <span><a href="#">Azure Kubernetes Service (AKS)</a></span>
                                                                        </div>
                                                                     </div>
                                                                 </div>
@@ -741,7 +763,7 @@
                                     <div class="cust-card-main">
                                         <div class="cust-card-img-con">
                                             <div class="cust-card-img">
-                                                <img src="assets/cus4.avif" alt="card-img" style="aspect-ratio: 1/0.898;">
+                                                <img src="assets/cus4.avif" alt="card-img">
                                             </div>
                                           </div>
                                             <div class="cust-content-con">
@@ -771,15 +793,21 @@
                                                                           <span><a href="#">Azure AI Foundry</a></span>
                                                                         </div>
                                                                      </div>
+                                                                     <div class="cust-c-b-link1">
+                                                                        <div class="cust-c-b-link1-1">
+                                                                          <div class="cust-c-b-link1-img"><img src="assets/ml.svg" alt="ml-img"></div>
+                                                                          <span><a href="#">Azure Machine Learning</a></span>
+                                                                        </div>
+                                                                     </div>
                                                                 </div>
-                                                                <div class="cust-c-b-link">
+                                                                <!-- <div class="cust-c-b-link">
                                                                     <div class="cust-c-b-link1">
                                                                        <div class="cust-c-b-link1-1">
                                                                          <div class="cust-c-b-link1-img"><img src="assets/ml.svg" alt="ml-img"></div>
                                                                          <span><a href="#">Azure Machine Learning</a></span>
                                                                        </div>
                                                                     </div>
-                                                                </div>
+                                                                </div> -->
                                                                 <div class="cust-c-b-link">
                                                                     <div class="cust-c-b-link1">
                                                                        <div class="cust-c-b-link1-1">
@@ -802,7 +830,7 @@
                                     <div class="cust-card-main">
                                         <div class="cust-card-img-con">
                                             <div class="cust-card-img">
-                                                <img src="assets/cus5.avif" alt="card-img" style="aspect-ratio:1/0.95;">
+                                                <img src="assets/cus5.avif" alt="card-img">
                                             </div>
                                           </div>
                                             <div class="cust-content-con">
@@ -844,7 +872,15 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="cust-icon"></div>
+                            <div class="cust-icon">
+                                <ol>
+                                    <li><div class="c-icon-img"><div><img src="assets/hp2.avif" alt=""></div></div></li>
+                                    <li><div class="c-icon-img"><div><img src="assets/unity2.avif" alt=""></div></div></li>
+                                    <li><div class="c-icon-img"><div><img src="assets/hu2.avif" alt=""></div></div></li>
+                                    <li><div class="c-icon-img"><div><img src="assets/sem2.avif" alt=""></div></div></li>
+                                    <li><div class="c-icon-img"><div><img src="assets/he2.avif" alt=""></div></div></li>
+                                </ol>
+                            </div>
                             <div class="cust-nxt">
                                 <div class="scroll-btn" id="c-sroll-btn">
                                     <button class="s-btn-1" id="c-scroll">
@@ -1020,12 +1056,14 @@
                 </div>
             </div>
             <div class="footer-bottom">
+                <div class="f-a">
                 <a href="#" id="f-a1">English (India)</a>
                 <a href="#" id="f-a2">
                     <img src="assets/crt-img.svg" alt="crt-img">
                     <span>Your Privacy Choices</span>
                 </a>
                 <a href="#"><span>Consumer Health Privacy</span></a>
+                </div>
                 <div class="f-ul">
                     <ul>
                         <li>Contact Microsoft</li>
