@@ -282,6 +282,13 @@ nav{
     display: flex;
     padding-right: 11px;
 }
+.search-con p{
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    color: #262626;
+    font-weight: 400;
+}
 .nav-2-con{
     display: none;
     padding-inline: 2px;
@@ -653,6 +660,9 @@ nav{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+}
+.feature-inner{
+    display: block;
 }
 .feature-head{
     display: block;
@@ -3047,7 +3057,8 @@ footer{
         column-gap: 16px;
       }
       .cust-icon{
-        display: block;
+        display:flex;
+        justify-content: center;
       }
       #c-sroll-btn{
         display: none;
@@ -3174,13 +3185,14 @@ footer{
     }
     .cust-card-img-con{
         height: 433px;
+        min-width: 449px;
         /* width: 449px; */
         /* max-height: 100%; */
         /* min-width: 449px; */
     }
-    .cust-card-img-con{
+    /* .cust-card-img-con{
         min-width: 449px;
-    }
+    } */
     .cust-content-con{
         padding: 24px 22px 25px 24px;
     }
@@ -3231,10 +3243,13 @@ footer{
     } */
     .header2-main{
         padding-inline: 5%;
+        /* margin: 0 auto; */
     }
     .content{
         padding-inline: 5%;
         padding-block: 94px;
+        margin-inline: auto;
+        max-width: 1328px;
     }
     .content-2 h1{
         font-size: 48px;
@@ -3254,6 +3269,10 @@ footer{
     .feature-content{
         padding-inline: 5%;
     }
+    .feature-inner{
+        max-width: 1328px;
+        margin-inline: auto;
+    }
     .f-head2 h2{
         font-size: 32px;
         line-height: 40px;
@@ -3264,6 +3283,11 @@ footer{
     }
     .solution-container{
         padding-inline: 5%;
+    }
+    .solution-inner{
+        display: block;
+        margin-inline: auto;
+        max-width: 1328px;
     }
     .sol-h-bottom{
         font-size: 32px;
@@ -3288,12 +3312,20 @@ footer{
     .gartner{
         padding-inline: 5%;
     }
+    .gartner-card-con{
+        margin-inline: auto;
+        max-width: 1328px;
+    }
     .gartner-card{
         margin-right: 8px;
     }
     .g-head h2{
         font-size: 32px;
         line-height: 40px;
+    }
+    .resource-inner{
+        margin-inline: auto;
+        max-width: 1328px;
     }
     .r-t-head2 h2{
         font-size: 40px;
@@ -3314,9 +3346,17 @@ footer{
     .customer{
         padding-inline: 5%;
     }
+    .customer-inner{
+        margin-inline:auto;
+        max-width: 1328px;
+    }
     .cust-head2 h2{
         font-size: 2rem;
         line-height: 2.5rem;
+    }
+    .cust-card-img-con{
+        height:537.45px;
+        min-width:641px;
     }
     .cust-c-text{
         font-size: 24px;
@@ -3325,6 +3365,10 @@ footer{
     .N-step{
         padding-inline: 5%;
     }
+    .step{
+        margin-inline: auto;
+        max-width: 1328px;
+    }
     .step-head h2{
         font-size: 2.5rem;
         line-height: 3rem;
@@ -3332,6 +3376,17 @@ footer{
     .st-c-head h3{
         font-size: 1.25rem;
         line-height: 1.75rem;
+    }
+    .social-container{
+        padding-inline: 5%;
+        margin-inline: auto;
+        max-width: 1328px;
+    }
+    .footer-top{
+        padding-inline: 5%;
+    }
+    .footer-bottom{
+        padding-inline: 5%;
     }
     .f-top{
         grid-template-columns: repeat(6,1fr);
