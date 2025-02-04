@@ -2384,6 +2384,9 @@ footer{
      #sol-list-big{
         padding-right:2px;
      }
+    .sol-content-inner .pro-ser-link a .text{
+        margin-bottom: 2px;
+    }
      .customer{
         padding-bottom: 41px;
      }
@@ -2446,7 +2449,7 @@ footer{
     }
     .solution-container{
         padding-inline: 3.90rem 4rem;
-        margin-left: -2px;
+        margin-left: -2.5px;
     } 
     .solution-head{
         margin-inline: 0px;
@@ -2464,7 +2467,7 @@ footer{
         display: block;
     }
     .s-f-btn-con a{
-        padding-inline: 11.7px;
+        padding-inline: 12px;
      }
     .gartner{
         padding-inline:4rem 4.25rem;
@@ -2487,9 +2490,15 @@ footer{
     .r-t-container{
         padding-top: 26px;
     }
-    .pro-ser-link a .text{
+    .sol-content-inner .pro-ser-link a .text{
+        margin-bottom: 0px;
+    }
+    .r-link .pro-ser-link a .text{
+        margin-bottom: 2px;
+    }
+    /* .pro-ser-link a .text{
         padding-bottom: 2px;
-     }
+     } */
      .azure-inner{
         padding-inline: 4rem;
     }
@@ -2505,6 +2514,7 @@ footer{
     } 
     .customer{
       padding-inline: 64px;
+      padding-bottom: 40px;
     }
     .cust-card{
         padding-inline: 0.20rem 0.45rem;
@@ -2829,8 +2839,11 @@ footer{
     .pro-ser-link a{
         margin-top: 0;
     }
-    .pro-ser-link a .text{
+    /* .pro-ser-link a .text{
         padding-bottom: 0px;
+    } */
+    .r-link .pro-ser-link a .text{
+        margin-bottom: -2px;
     }
     .gartner{
         padding-block: 113px 96px;
@@ -3218,7 +3231,7 @@ footer{
     }
     .header2-main{
         padding-inline: 5%;
-        margin: auto;
+        margin-inline: auto;
         max-width: 1600px;
     }
     #nav-b-5{
@@ -3378,6 +3391,14 @@ footer{
         font-size: 20px;
         line-height:32px;
     }
+    .resource-nav{
+        margin-inline: auto;
+        max-width: 1328px;
+    }
+    .r-t-container{
+        margin-inline: auto;
+        max-width: 1328px;
+    }
     .customer{
         padding-inline: 5%;
     }
@@ -3404,6 +3425,12 @@ footer{
     .c-link{
         margin-top:-1px ;
     }
+    .c-link .pro-ser-link .text {
+        margin-top: -3px;
+    }
+    .st-c-link .pro-ser-link .text {
+        padding-bottom: 0px;
+    }
     .N-step{
         padding-inline: 5%;
     }
@@ -3423,6 +3450,12 @@ footer{
         padding-inline: 5%;
         margin-inline: auto;
         max-width: 1328px;
+    }
+    .social-top a span {
+        margin-top: 1px;
+    }
+    .social-bottom {
+        margin-bottom: -5px;
     }
     footer{
         padding: 0 0 16px 0;
@@ -3465,5 +3498,26 @@ footer{
     .footer-bottom{
         margin: auto;
         max-width:1600px;
+    }
+}
+@media screen and (min-width:1817px) {
+    .home{
+        min-height: 632px;
+    }
+    .home-img{
+        min-height: 632px;
+    }
+    .content-container{
+        margin-top: 5px;
+    }
+    .h2-head a {
+        margin-left: 32px;
+        padding: 16px 10px;
+    }
+    #nav-content{
+        margin-inline: 4px;
+    }
+    .nav-con button{
+        padding: 16px 32px 16px 16px;
     }
 }
