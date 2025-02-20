@@ -337,7 +337,7 @@ nav{
 }
 /*-------- fixed chat ------------*/
 .chat{
-    display:none;
+    display:block;
 }
 .chat-con{
     position: fixed;
@@ -350,7 +350,7 @@ nav{
 }
 .chat-con button{
     padding: 0.75rem;
-    padding-left:2.185rem;
+    padding-left:34px;
     cursor: pointer;
     border: 2px solid transparent;
     font-weight: 600;
@@ -373,7 +373,7 @@ nav{
     line-height: 1;
     position: absolute;
     top: 50%;
-    left: .75rem;
+    left: 12.4px;
     margin-top: -.5em;
     color: #fff;
     font-size: .9375rem;
@@ -1027,7 +1027,7 @@ width: 100%;
     display: flex;
     flex-direction: column;
     gap: 24px;
-    margin-bottom: 24px;
+    margin-bottom: 20px;
 }
 .sol-drop-para{
     display: block;
@@ -1072,6 +1072,7 @@ width: 100%;
 .drop-img-btn{
     position: absolute;
     display: block;
+    margin-top: -3px;
 }
 .drop-img-btn a{
     padding: 16px;
@@ -2120,7 +2121,7 @@ border-radius: 16px;
     height: 100%;
 }
 .cust-nxt{
-    padding:1.15rem 0.5rem 1.15rem;
+    padding:2.15rem 0.5rem 1.15rem;
     display: block;
     gap: 1rem;
 }
@@ -2226,8 +2227,11 @@ border-radius: 16px;
 /* ------------social media----------- */
 .social-container{
     display: block;
-    margin: 0 0 -48px;
-    padding: 24px 16px;
+    /* margin: 0 0 -48px; */
+    /* padding: 24px 16px; */
+    margin: 0 0 -58px;
+    padding: 24px 16px 34px;
+    background-color: #f7f7f7;
 }
 .social{
     display: flex;
@@ -2271,6 +2275,9 @@ border-radius: 16px;
 }
 .social-bottom  a{
     margin-right:24px;
+}
+#intsa{
+    margin-right: 23px;
 }
 /* -----------end of social media----------- */
 /* ----------------footer--------------- */
@@ -2351,7 +2358,8 @@ footer{
     padding-right: 0.5rem;
 }
 .f-ul{
-    margin:12px 0px 3px;
+    margin: 12px 0 0 3px;
+    margin:8px 0px 3px;
     display: block;
 }
 .f-ul ul{
@@ -2367,6 +2375,7 @@ footer{
 .f-ul ul li{
     float: left;
     padding-top: 6px;
+    padding-top: 15px;
     padding-right: 13px;
 }
 /*---------------- end of the footer-------------- */
@@ -2390,6 +2399,9 @@ footer{
       #cust-card-5 .cust-card-img{
          min-height:261.53px;
       }  
+      .drop-img-btn{
+        margin-top: -5px;
+      }
 }
 @media screen and (min-width:425px) {
     #f-f-text{
@@ -2554,17 +2566,20 @@ footer{
     .st-card-con{
         padding-right: 16px;
     }
-    .social-container{
+    /* .social-container{
     padding: 24px 64px;
-    }
+    } */
     .social-top a{
-        padding-top: 15px;
+        padding-top: 14px;
     }
     footer{
-        padding-bottom: 0px;
+        padding-bottom: 10px;
     }
     .f-top{
         grid-template-columns: repeat(3,1fr);
+    }
+    .f-ul{
+        margin: 17px 0 0 0px;
     }
     .f-ul  ul li{
         padding: 6px 7px 0 6px;
@@ -2597,11 +2612,11 @@ footer{
  }
 /* tablet view */
 @media screen and (min-width:768px) {
-    footer{
-        padding-bottom: 0px;
-    }
+    /* footer{
+        padding-bottom:0px;
+    } */
     .f-ul{
-        margin-top: 3px;
+        margin-top: 11px;
     }
     .f-ul ul {
         display: flex;
@@ -2654,6 +2669,9 @@ footer{
     .social-top a span {
         margin-top: -1px;
     }
+    #insta{
+        margin-inline: -1px 24px;
+    }
 }
 /* laptop view */
 @media screen and (min-width:860px) {
@@ -2668,6 +2686,9 @@ footer{
     }
     .nav{
         display: none;
+    }
+    .chat-con button{
+        padding-right: 16px;
     }
     .home{
         min-height: 674px;
@@ -2796,9 +2817,15 @@ footer{
     #sol-scroll{
         display: flex;
     }
+    .sol-drop{
+        margin-bottom: 24px;
+    } 
     .sol-drop-img-con a{
         margin-block: 7px 9px;
     }
+    .drop-img-btn{
+        margin-top: -3px;
+      }
      #pro-ser-container{
         padding-block: 96px 92px;
      }
@@ -2956,7 +2983,8 @@ footer{
      }
      .customer{
         padding-block: 72px 63px;
-       padding-inline: 56px;
+        padding-inline: 56px;
+        background-image: url("https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/386597-desktop-case-study-customer-stories-bg-1600x1053?resMode=sharp2&op_usm=1.5,0.65,15,0&wid=1600&hei=1053&qlt=100&fmt=png-alpha&fit=constrain");
      }
      .cust-head1{
         margin-bottom: 8px;
@@ -3121,9 +3149,9 @@ footer{
     #sol-lst-h3{
         margin-top: -1px;
     }
-    .sol-d-img-con img{
+    /* .sol-d-img-con img{
         object-fit: none;
-    }
+    } */
     .sol-link-text {
         margin-top: -1px;
     }
@@ -3177,7 +3205,8 @@ footer{
         padding: 24px 22px 24px 24px;
     }
     .cust-nxt{
-        margin-top: -7px;
+        margin-top: -23px;
+        /* margin-top:-7px */
     }
     .social-top a span {
         margin-top:0px;
@@ -3501,6 +3530,9 @@ footer{
         margin: auto;
         max-width: 1003px
     }
+    .c-icon-img span{
+        width: 194px;
+    }
     .c-link{
         /* margin-top:-1px ; */
         margin-left: -2px;
@@ -3566,7 +3598,7 @@ footer{
         padding: 16px 72px 2px;
     }
     .f-ul{
-        margin: 17px 0px 0px;
+        margin: 25px 0px 0px;
     }
     #f-a1{
         margin-top: -4px;
